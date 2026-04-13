@@ -35,7 +35,7 @@ $img = $um_trofeu['img'];
             <img style="width: 200px;" src="img/gremio logo.svg">
         </div>
         <nav>
-            <a href="header.php">Home</a>
+            <a href="index.php">Home</a> 
             <a href="trofeus.php">Troféus</a>
             <a href="novo-trofeu.html">Novo Troféu</a>
             <a href="gerenciar-trofeu.php">Gerenciar Troféu</a>

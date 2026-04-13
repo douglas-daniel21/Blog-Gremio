@@ -25,7 +25,7 @@ $rs_trofeus = $conn->query($sql_dados_trofeus);
         </div>
 
     <nav>
-        <a href="header.php">Home</a>
+        <a href="index.php">Home</a>
         <a href="trofeus.php">Troféus</a>
         <a href="novo-trofeu.html">Novo Troféu</a>
         <a href="gerenciar-trofeu.php">Gerenciar Troféu</a>

@@ -35,7 +35,7 @@ $img = $um_post['img'];
 
 <body>
 
-    <header style="text-align: center; padding: 10px;">
+    <header style="text-align: center; padding: 20px;">
         <img style="width: 20%;" src="../img/gremio logo.svg">
         <img style="width: 80%;" src="../gif/gif-2000x380.gif">
     </header>
@@ -73,10 +73,19 @@ $img = $um_post['img'];
 
        
     <footer style="text-align: center; padding: 20px">
-        <button style="background-color: white; padding: 5px; border 1px solid gray;" href=""> <img style="width: 40px;" src="../img/icones/icone-zap.jpg"> </button>
-        <button style="background-color: white; padding: 5px; border 1px solid gray;" href=""> <img style="width: 40px;" src="../img/icones/icone-instagram.jpg"></button>
-        <button style="background-color: white; padding: 5px; border 1px solid gray;" href=""> <img style="width: 40px;" src="../img/icones/icone-compartilhar.jpg"></button>
+        <button  style="background-color: white; padding: 5px; border 1px solid gray;" href="">
+             <img style="width: 40px;" src="../img/icones/icone-zap.jpg"> 
+        </button>
+
+        <button style="background-color: white; padding: 5px; border 1px solid gray;" href="">
+             <img style="width: 40px;" src="../img/icones/icone-instagram.jpg">
+        </button>
+
+        <button style="background-color: white; padding: 5px; border 1px solid gray;" href="">
+             <img style="width: 40px;" src="../img/icones/icone-compartilhar.jpg">
+        </button>
     </footer>
+    <hr>
 
     <div class="container">
     <?php

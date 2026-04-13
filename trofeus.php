@@ -7,12 +7,10 @@ require "model-trofeu.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Troféus</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <title>Troféus</title>
 </head>
 <body style="text-align: center;">
     <header>
@@ -22,8 +20,8 @@ require "model-trofeu.php";
         </div>
 
         <nav>
-            <a href="header.php">Home</a>
-            <a href="trofeus.php">Troféus</a>
+        <a href="index.php">Home</a>
+        <a href="trofeus.php">Troféus</a>
             <a href="novo-trofeu.html">Novo Troféu</a>
             <a href="gerenciar-trofeu.php">Gerenciar Troféus</a>
         </nav>

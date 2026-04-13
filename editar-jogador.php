@@ -38,7 +38,7 @@ $img = $um_jogador['img'];
         </div>
 
         <nav>
-            <a href="header.php">Home</a>
+            <a href="index.php">Home</a>
             <a href="jogador.php">Jogadores</a>
             <a href="novo-jogador.html">Novo Jogador</a>
             <a href="gerenciar-jogador.php">Deletar Jogador</a>

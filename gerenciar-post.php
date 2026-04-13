@@ -25,7 +25,7 @@ $rs_posts = $conn->query($sql_dados_posts);
         </div>
 
     <nav>
-        <a href="header.php">Home</a>
+        <a href="index.php">Home</a>
         <a href="posts.php">Posts</a>
         <a href="novo-post.html">Novo Post</a>
         <a href="gerenciar-post.php">Gerenciar Posts</a>

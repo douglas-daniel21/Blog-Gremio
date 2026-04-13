@@ -15,7 +15,7 @@
         </div>
                    
         <nav>
-            <a href="header.php">Home</a>
+            <a href="index.php">Home</a>
             <a href="contratacoes.php">Contratações</a>
             <a href="nova-contratacao.html">Nova Contratação</a>
             <a href="gerenciar-contratacao.php">Gerenciar Contratações</a>
@@ -25,25 +25,25 @@
     <form action="nova-contratacao.php"  method="post">
 
         <label>Nome:</label>
-        <input style="width: 100%;" name="contratacao_nome">
+        <input type="text" style="width: 100%;" name="contratacao_nome" required>
 
         <label>Posição:</label>
-        <input style="width: 100%;" name="contratacao_posicao">
+        <input type="text" style="width: 100%;" name="contratacao_posicao"  minlength="3" required>
 
         <label>Time:</label>
-        <input style="width: 100%;" name="contratacao_time">
+        <input type="text" style="width: 100%;" name="contratacao_time" required>
 
         <label>Idade:</label>
-        <input style="width: 100%;" name="contratacao_idade">
+        <input type="number" style="width: 100%;" name="contratacao_idade"  minlength="2" required>
 
         <label>Nacionalidade:</label>
-        <input style="width: 100%;" name="contratacao_nacionalidade">
+        <input type="text" style="width: 100%;" name="contratacao_nacionalidade" required>
 
         <label>Valor:</label>
-        <input style="width: 100%;" name="contratacao_valor">
+        <input type="number" style="width: 100%;" name="contratacao_valor" required>
 
         <label>Img:</label>
-        <input style="width: 100%;" name="contratacao_img">
+        <input type="text" style="width: 100%;" name="contratacao_img" required>
         
         <input style="width: 100%;" type="submit" value = "Criar linha">
     </form>

@@ -25,7 +25,7 @@ $rs_jogadores = $conn->query($sql_dados_jogadores);
         </div>
 
     <nav>
-        <a href="header.php">Home</a>
+        <a href="index.php">Home</a>
         <a href="jogador.php">Jogadores</a>
         <a href="novo-jogador.html">Novo Jogador</a>
         <a href="gerenciar-jogador.php">Gerenciar Jogador</a>

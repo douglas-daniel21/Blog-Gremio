@@ -7,12 +7,9 @@ require "model-jogador.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-   
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Jogadores</title>
 </head>
 <body>
@@ -23,7 +20,7 @@ require "model-jogador.php";
         </div>
         
         <nav>
-            <a href="header.php">Home</a>
+            <a href="index.php">Home</a>
             <a href="jogador.php">Jogadores</a>
             <a href="novo-jogador.html">Novo Jogador</a>
             <a href="gerenciar-jogador.php">Gerenciar Jogador</a>
@@ -48,7 +45,7 @@ require "model-jogador.php";
             //...usamos as variáveis para preencher o template
             $template_jogador = "
             <div  style='text-align: center;'>
-                <div style='width: 50%;' class='card mb-4 rounded-3 shadow-sm'>
+                <div style='width: 100%;' class='card mb-4 rounded-3 shadow-sm'>
                     <div class='card-header'>
                     <img style='width: 100%;' src='img/jogadores/$jogador_img.jpg'> 
                     </div>

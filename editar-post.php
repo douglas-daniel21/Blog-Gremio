@@ -38,7 +38,7 @@ $img = $um_post['img'];
             <img style="width: 200px;" src="img/gremio logo.svg">
         </div>
         <nav>
-            <a href="header.php">Home</a>
+            <a href="index.php">Home</a>
             <a href="posts.php">Posts</a>
             <a href="novo-post.html">Novo Post</a>
             <a href="deletar-post.php">Deletar Post</a>

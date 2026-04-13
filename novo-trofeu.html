@@ -14,7 +14,7 @@
             <img style="width: 200px;" src="img/gremio logo.svg">
         </div>
         <nav>
-            <a href="header.php">Home</a>
+            <a href="index.php">Home</a>
             <a href="trofeus.php">Troféus</a>
             <a href="novo-trofeu.html">Novo Troféu</a>
             <a href="gerenciar-trofeu.php">Gerenciar Troféus</a>
@@ -24,16 +24,16 @@
     <form action="novo-trofeu.php" method="post">
         
         <label>Nome:</label>
-        <input style="width: 100%;" name="trofeu_nome">
+        <input type="text" style="width: 100%;" name="trofeu_nome" required>
 
         <label>Quantidade:</label>
-        <input style="width: 100%;" name="trofeu_quantidade"></input> 
+        <input type="number" style="width: 100%;" name="trofeu_quantidade" required></input> 
         
-        <label>Ultima vez conquistado:</label>
-        <input style="width: 100%;" name="trofeu_ultimo"></input> 
+        <label>Ultimo ano conquistado:</label>
+        <input type="number" style="width: 100%;" name="trofeu_ultimo" minlength="4" required></input> 
 
         <label>Img:</label>
-        <input style="width: 100%;" name="trofeu_img"> 
+        <input style="width: 100%;" name="trofeu_img" required> 
 
         <input style="width: 100%;" type="submit" value = "Criar linha">
     </form>

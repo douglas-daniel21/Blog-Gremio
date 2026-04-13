@@ -15,7 +15,7 @@
         </div>
 
         <nav>
-            <a href="header.php">Home</a>
+            <a href="index.php">Home</a>
             <a href="jogador.php">Jogadores</a>
             <a href="novo-jogador.html">Novo Jogador</a>
             <a href="gerenciar-jogador.php">Gerenciar Jogador</a>
@@ -25,22 +25,22 @@
     <form action="novo-jogador.php" method="post">
         
         <label>Nome:</label>
-        <input style="width: 100%;" name="jogador_nome">
+        <input type="text" style="width: 100%;" name="jogador_nome" required>
 
         <label>Posição:</label>
-        <input style="width: 100%;" name="jogador_posicao"> 
+        <input type="text" style="width: 100%;" name="jogador_posicao"  minlength="3" required> 
 
         <label>Idade:</label>
-        <input style="width: 100%;" name="jogador_idade">
+        <input type="number" style="width: 100%;" name="jogador_idade"  minlength="2" required>
 
         <label>Camisa:</label>
-        <input style="width: 100%;" name="jogador_camisa">
+        <input type="number" style="width: 100%;" name="jogador_camisa"  minlength="3" required>
 
         <label>Nacionalidade:</label>
-        <input style="width: 100%;" name="jogador_nacionalidade">
+        <input type="text" style="width: 100%;" name="jogador_nacionalidade" required>
 
         <label>Img:</label>
-        <input style="width: 100%;" name="jogador_img"> 
+        <input style="width: 100%;" name="jogador_img" required> 
 
         <input style="width: 100%;" type="submit" value = "Criar linha">
     </form>

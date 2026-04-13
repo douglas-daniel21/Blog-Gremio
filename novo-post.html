@@ -15,7 +15,7 @@
             <img style="width: 200px;" src="img/gremio logo.svg">
         </div>
         <nav>
-            <a href="header.php">Home</a>
+            <a href="index.php">Home</a>
             <a href="posts.php">Posts</a>
             <a href="novo-post.html">Novo Post</a>
             <a href="gerenciar-post.php">Gerenciar Posts</a>
@@ -27,22 +27,22 @@
     <form action="novo-post.php" method="post">
         
         <label>Título:</label>
-        <input style="width: 100%;" name="post_titulo">
+        <input type="text" style="width: 100%;" name="post_titulo" required>
 
         <label>Resumo:</label>
-        <textarea name="post_resumo"></textarea>
+        <textarea type="text" name="post_resumo" required></textarea>
 
         <label>Texto:</label>
-        <textarea name="post_texto"></textarea>
+        <textarea type="text" name="post_texto" required></textarea>
 
         <label>Autor:</label>
-        <input style="width: 100%;" name="post_autor">
+        <input type="text" style="width: 100%;" name="post_autor" required>
 
         <label>Data:</label>
-        <input style="width: 100%;" name="post_data">
+        <input type="date" style="width: 100%;" name="post_data" required>
 
         <label>Img:</label>
-        <input style="width: 100%;" name="post_img">
+        <input style="width: 100%;" name="post_img" required>
 
         <input style="width: 100%;" type="submit" value = "Criar linha">
     </form>

@@ -26,7 +26,7 @@ $rs_contratacoes = $conn->query($sql_dados_contratacoes);
         </div>
 
     <nav>
-        <a href="header.php">Home</a>
+        <a href="index.php">Home</a>
         <a href="contratacoes.php">Contratações</a>
         <a href="nova-contratacao.html">Nova Contratação</a>
         <a href="gerenciar-contratacao.php">Gerenciar Contratações</a>
