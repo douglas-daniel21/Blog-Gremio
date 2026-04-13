@@ -6,6 +6,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
     
     <title>BlogDoGrêmio</title>
 </head>
@@ -46,8 +50,6 @@
                     Entrar
                 </a>
                 </div>
-                
-                
 
             </div>
         </div>
@@ -93,12 +95,40 @@
         require("require/card-socio.html");
         ?>
 
+        <hr>
+        <div style="padding-left: 10px; padding-rigth: 10px; text-align: center;">
+            <div class="row">
+                <div class="col">
+                    <?php
+                    require("carrosel-ata.php");
+                    ?>
+                </div>
 
-        <div class='card mb-4 rounded-3 shadow-sm' style="width: 100%;">
-            <?php
-            require("carrosel.html");
-            ?>
+                <div class="col">
+                    <?php
+                    require("carrosel-mc.php");
+                    ?>
+                </div>
+
+                <div class="col">
+                    <?php
+                    require("carrosel-def.php");
+                    ?>
+                </div>
+
+                <div class="col">
+                    <?php
+                    require("carrosel-gol.php");
+                    ?>
+                </div>
+
+            </div>
+            <h4 style="padding: 10px;">
+                <a style="padding: 10px;color: white; background-color: skyblue; border-radius: 10px;" href="jogador.php">Ver Jogadores</a>
+            </h4>
         </div>
+        <hr>
+
         
         <?php
         require("require/footer.html");
