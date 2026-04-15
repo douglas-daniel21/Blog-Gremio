@@ -50,22 +50,22 @@ $img = $um_post['img'];
     <form action="ctrl-atualizar-post.php" method="post">
         
         <label>Título:</label>
-        <input style="width: 100%;" name="posts_titulo" value="<?=$titulo?>">
+        <input type="text" style="width: 100%;" name="posts_titulo" value="<?=$titulo?>"required>
         
         <label>Resumo:</label>
-        <textarea name="posts_resumo"><?=$resumo?></textarea>
+        <textarea name="posts_resumo" required><?=$resumo?></textarea>
 
         <label>Texto:</label>
-        <textarea name="posts_texto"><?=$texto?></textarea>
+        <textarea name="posts_texto" required><?=$texto?></textarea>
 
         <label>Autor:</label>
-        <input style="width: 100%;" name="posts_autor" value="<?=$autor?>">
+        <input type="text" style="width: 100%;" name="posts_autor" value="<?=$autor?>"required>
 
         <label>Data:</label>
-        <input style="width: 100%;" name="posts_data" value="<?=$data?>">
+        <input type="date" style="width: 100%;" name="posts_data" value="<?=$data?>"required>
 
         <label>Img:</label>
-        <input style="width: 100%;" name="posts_img" value="<?=$img?>">
+        <input type="text" style="width: 100%;" name="posts_img" value="<?=$img?>"required>
         
         <input type="hidden" name="posts_id" value="<?=$id_post?>">
 

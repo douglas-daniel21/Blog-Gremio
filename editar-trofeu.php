@@ -45,16 +45,16 @@ $img = $um_trofeu['img'];
     <form action="ctrl-atualizar-trofeu.php" method="post">
         
         <label>Nome:</label>
-        <input style="width: 100%;" name="trofeu_nome" value="<?=$nome?>">
+        <input type="text" style="width: 100%;" name="trofeu_nome" value="<?=$nome?>" required>
 
         <label>Quantidade:</label>
-        <input style="width: 100%;" name="trofeu_quantidade" value="<?=$quantidade?>">
+        <input type="number" style="width: 100%;" name="trofeu_quantidade" value="<?=$quantidade?>" required>
         
-        <label>Ultima vez conquistado:</label>
-        <input style="width: 100%;" name="trofeu_ultimo" value="<?=$ultimo?>">
+        <label>Ultimo ano conquistado:</label>
+        <input minlength="4" type="number" style="width: 100%;" name="trofeu_ultimo" value="<?=$ultimo?>" required>
 
         <label>Img:</label>
-        <input style="width: 100%;" name="trofeu_img" value="<?=$img?>">
+        <input type="text" style="width: 100%;" name="trofeu_img" value="<?=$img?>" required>
         
         <input type="hidden" name="trofeu_id" value="<?=$id_trofeu?>">
 

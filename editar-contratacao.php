@@ -49,25 +49,25 @@ $img = $uma_contratacao['img'];
     <form action="ctrl-atualizar-contratacao.php"  method="post">
         
         <label>Nome:</label>
-        <input style="width: 100%;" name="contratacao_nome" value="<?=$nome?>">
+        <input type="text" style="width: 100%;" name="contratacao_nome" value="<?=$nome?>" required>
 
         <label>Posição:</label>
-        <input style="width: 100%;" name="contratacao_posicao" value="<?=$posicao?>">
+        <input minlength="3" type="text" style="width: 100%;" name="contratacao_posicao" value="<?=$posicao?>" required>
 
         <label>Time:</label>
-        <input style="width: 100%;" name="contratacao_time" value="<?=$time?>">
+        <input type="text" style="width: 100%;" name="contratacao_time" value="<?=$time?>" required>
 
         <label>Idade:</label>
-        <input style="width: 100%;" name="contratacao_idade" value="<?=$idade?>">
+        <input minlength="2" type="number" style="width: 100%;" name="contratacao_idade" value="<?=$idade?>" required>
 
         <label>Nacionalidade:</label>
-        <input style="width: 100%;" name="contratacao_nacionalidade" value="<?=$nacionalidade?>">
+        <input type="text" style="width: 100%;" name="contratacao_nacionalidade" value="<?=$nacionalidade?>" required>
 
         <label>Valor:</label>
-        <input style="width: 100%;" name="contratacao_valor" value="<?=$valor?>">
+        <input type="number" style="width: 100%;" name="contratacao_valor" value="<?=$valor?>" required>
 
         <label>Img:</label>
-        <input style="width: 100%;" name="contratacao_img" value="<?=$img?>">
+        <input style="width: 100%;" name="contratacao_img" value="<?=$img?>" required>
         
         <input type="hidden" name="contratacao_id" value="<?=$id_contratacao?>">
 

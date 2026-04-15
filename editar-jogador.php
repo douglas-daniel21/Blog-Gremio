@@ -48,22 +48,22 @@ $img = $um_jogador['img'];
     <form action="ctrl-atualizar-jogador.php" method="post">
         
         <label>Nome:</label>
-        <input style="width: 100%;" name="jogador_nome" value="<?=$nome?>">
+        <input type="text" style="width: 100%;" name="jogador_nome" value="<?=$nome?>" required>
 
         <label>Posição:</label>
-        <input style="width: 100%;" name="jogador_posicao" value="<?=$posicao?>"> 
+        <input minlength="3" type="text" style="width: 100%;" name="jogador_posicao" value="<?=$posicao?>" required> 
 
         <label>Idade:</label>
-        <input style="width: 100%;" name="jogador_idade" value="<?=$idade?>">
+        <input minlength="2" type="number" style="width: 100%;" name="jogador_idade" value="<?=$idade?>" required>
 
         <label>Camisa:</label>
-        <input style="width: 100%;" name="jogador_camisa" value="<?=$camisa?>">
+        <input minlength="3" type="number" style="width: 100%;" name="jogador_camisa" value="<?=$camisa?>" required>
 
         <label>Nacionalidade:</label>
-        <input style="width: 100%;" name="jogador_nacionalidade" value="<?=$nacionalidade?>">
+        <input type="text" style="width: 100%;" name="jogador_nacionalidade" value="<?=$nacionalidade?>" required>
 
         <label>Img:</label>
-        <input style="width: 100%;" name="jogador_img" value="<?=$img?>">
+        <input type="text" style="width: 100%;" name="jogador_img" value="<?=$img?>" required>
         
         <input type="hidden" name="jogador_id" value="<?=$id_jogador?>">
 
