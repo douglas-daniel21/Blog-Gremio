@@ -52,6 +52,12 @@
                 </div>
 
             </div>
+
+            <div style="text-align: center;" class="form-floating"> 
+                <input style="width: 50%;" class="form-control" placeholder=""> 
+                <label>Pesquisar</label> 
+            </div>
+
         </div>
     </header>
     <div>
