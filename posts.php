@@ -25,7 +25,11 @@ require "model-post.php";
         </nav>
     </header>
 
-    <main>
+    <main> 
+        <div style="text-align: center;" class="form-floating"> 
+            <input class="form-control" placeholder=""> 
+            <label>Pesquisar Post</label> 
+        </div>
         <section>
             <h1 style="text-align: center;">Posts</h1>
         <?php

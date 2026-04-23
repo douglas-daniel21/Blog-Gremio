@@ -13,6 +13,7 @@ UPDATE contratacoes
 SET nome = :nome,
     posicao = :posicao,
     time = :time,
+    
     idade = :idade,
     nacionalidade = :nacionalidade,
     valor = :valor,

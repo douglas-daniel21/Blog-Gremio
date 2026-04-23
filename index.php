@@ -34,38 +34,6 @@
         ?>
 
         <hr>
-        <div style="padding-left: 10px; padding-rigth: 10px; text-align: center;">
-            <div class="row">
-                <div class="col">
-                    <?php
-                    require("carrosel-ata.php");
-                    ?>
-                </div>
-
-                <div class="col">
-                    <?php
-                    require("carrosel-mc.php");
-                    ?>
-                </div>
-
-                <div class="col">
-                    <?php
-                    require("carrosel-def.php");
-                    ?>
-                </div>
-
-                <div class="col">
-                    <?php
-                    require("carrosel-gol.php");
-                    ?>
-                </div>
-
-            </div>
-            <h4 style="padding: 10px;">
-                <a style="padding: 10px;color: white; background-color: skyblue; border-radius: 10px;" href="jogador.php">Ver Jogadores</a>
-            </h4>
-        </div>
-        <hr>
         
         <?php
         require("require/footer.html");

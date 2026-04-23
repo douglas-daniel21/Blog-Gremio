@@ -1,0 +1,11 @@
+{
+    "name": "douglas/blog",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Douglas\\Blog\\": "src/"
+        }
+    },
+    "require": {}
+}
