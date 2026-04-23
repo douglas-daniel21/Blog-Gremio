@@ -25,22 +25,22 @@
     <form action="novo-jogador.php" method="post">
         
         <label>Nome:</label>
-        <input type="text" style="width: 100%;" name="jogador_nome" required>
+        <input type="text" style="width: 100%;" name="jogador_nome" pattern="[A-Z]+" required>
 
         <label>Posição:</label>
-        <input type="text" style="width: 100%;" name="jogador_posicao"  minlength="3" required> 
+        <input type="text" style="width: 100%;" name="jogador_posicao" pattern="[A-Z]+"  minlength="2"  maxlength="3" required> 
 
         <label>Idade:</label>
-        <input type="number" style="width: 100%;" name="jogador_idade"  minlength="2" required>
+        <input type="number" style="width: 100%;" name="jogador_idade" minlength="2"   maxlength="2" required>
 
         <label>Camisa:</label>
-        <input type="number" style="width: 100%;" name="jogador_camisa"  minlength="3" required>
+        <input type="number" style="width: 100%;" name="jogador_camisa"  minlength="2"  maxlength="3" required>
 
         <label>Nacionalidade:</label>
-        <input type="text" style="width: 100%;" name="jogador_nacionalidade" required>
+        <input type="text" style="width: 100%;" name="jogador_nacionalidade" pattern="[A-Z-a-z]+" required>
 
         <label>Img:</label>
-        <input style="width: 100%;" name="jogador_img" required> 
+        <input style="width: 100%;" name="jogador_img">
 
         <input style="width: 100%;" type="submit" value = "Criar linha">
     </form>

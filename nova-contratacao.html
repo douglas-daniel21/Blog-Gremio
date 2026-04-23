@@ -25,25 +25,25 @@
     <form action="nova-contratacao.php"  method="post">
 
         <label>Nome:</label>
-        <input type="text" style="width: 100%;" name="contratacao_nome" required>
+        <input type="text" style="width: 100%;" name="contratacao_nome" pattern="[A-Z-a-z]+" required>
 
         <label>Posição:</label>
-        <input type="text" style="width: 100%;" name="contratacao_posicao"  minlength="3" required>
+        <input type="text" style="width: 100%;" name="contratacao_posicao"  minlength="2" maxlength="3" required>
 
-        <label>Time:</label>
-        <input type="text" style="width: 100%;" name="contratacao_time" required>
+        <label>Ex time:</label>
+        <input type="text" style="width: 100%;" name="contratacao_time" pattern="[A-Z-a-z]+" required>
 
         <label>Idade:</label>
-        <input type="number" style="width: 100%;" name="contratacao_idade"  minlength="2" required>
+        <input type="number" style="width: 100%;" name="contratacao_idade" minlength="1"  maxlength="2" required>
 
         <label>Nacionalidade:</label>
-        <input type="text" style="width: 100%;" name="contratacao_nacionalidade" required>
+        <input type="text" style="width: 100%;" name="contratacao_nacionalidade" pattern="[A-Z-a-z]+" required>
 
         <label>Valor:</label>
         <input type="number" style="width: 100%;" name="contratacao_valor" required>
 
         <label>Img:</label>
-        <input type="text" style="width: 100%;" name="contratacao_img" required>
+        <input type="text" style="width: 100%;" name="contratacao_img">
         
         <input style="width: 100%;" type="submit" value = "Criar linha">
     </form>

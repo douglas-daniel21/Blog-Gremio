@@ -24,16 +24,16 @@
     <form action="novo-trofeu.php" method="post">
         
         <label>Nome:</label>
-        <input type="text" style="width: 100%;" name="trofeu_nome" required>
+        <input type="text" style="width: 100%;" name="trofeu_nome" pattern="[A-Z]+" required>
 
         <label>Quantidade:</label>
-        <input type="number" style="width: 100%;" name="trofeu_quantidade" required></input> 
+        <input type="number" style="width: 100%;" name="trofeu_quantidade" required>
         
         <label>Ultimo ano conquistado:</label>
-        <input type="number" style="width: 100%;" name="trofeu_ultimo" minlength="4" required></input> 
+        <input type="number" style="width: 100%;" name="trofeu_ultimo"  maxlength="4" required>
 
         <label>Img:</label>
-        <input style="width: 100%;" name="trofeu_img" required> 
+        <input style="width: 100%;" name="trofeu_img">
 
         <input style="width: 100%;" type="submit" value = "Criar linha">
     </form>
