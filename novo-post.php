@@ -10,32 +10,16 @@ $img = $_POST['post_img'];
 
 $validation = new Validation();
 $data = $validation->validator(
-    [
-    "imdb" => $input["imdb"] ?? "",
-    "titulo" => $input["titulo"] ?? "",
-    "genero" => $input["genero"] ?? [],
-    "duracao" => $input["duracao"] ?? 0,
-    "classificacao" => $input["classificacao"] ?? ""
-    ],//Dados
+    $_POST,//Dados
 
     [
-        "imdb" => "required|size:10",
-        "titulo" => "required|min:5",
-        "genero" => "required|array|min:1",
-        "duracao" => "required|numeric|min:90",
-        "classificacao" => "required|min:2",
+        "post_titulo" => "required|min:5",
+        "post_resumo" => "required|min:20",
     ],//Regras
 
     [
-        "imdb.required" => "O campo imdb é obrigatório.",
-        "titulo.required" => "O campo titulo é obrigatório.",
-        "genero.required" => "O campo genero é obrigatório.",
-        "genero.array" => "O campo genero deve ser um array.",
-        "genero.min" => "O campo genero deve ter pelo menos 1 item.",
-        "duracao.required" => "O campo duracao é obrigatório.",
-        "duracao.integer" => "O campo duracao deve ser um número inteiro.",
-        "classificacao.required" => "O campo classificacao é obrigatório.",
-        "classificacao.string" => "O campo classificacao deve ser uma string."
+        "post_titulo.required" => "O campo imdb é obrigatório.",
+        "post_titulo.min" => "O título do post deve ter no mínimo 20 caracteres",
     ],//Messages
 );
 
