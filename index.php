@@ -4,7 +4,7 @@
     ?>
     <hr>
     <?php
-    require("require/hero.html");
+    require("View/hero.html");
     ?>
     <hr>
 
@@ -14,7 +14,7 @@
         <div class="col-10">
 
             <?php
-            require("require/post.php");
+            require("View/post-index.php");
             ?>
 
         </div>
@@ -22,7 +22,7 @@
         <div style="text-align: center;" class="col-2">
 
             <?php
-            require("require/anuncio.html")
+            require("View/anuncio.html")
             ?>
 
         </div>
@@ -30,13 +30,13 @@
     </div>
     <hr>
         <?php
-        require("require/card-socio.html");
+        require("View/card-socio.html");
         ?>
 
         <hr>
         
         <?php
-        require("require/footer.html");
+        require("View/footer.html");
         ?>
 
     </main>
