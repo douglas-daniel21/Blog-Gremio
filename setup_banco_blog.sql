@@ -77,3 +77,21 @@ create table partidas(
     data text,
     hora text
 );
+
+drop table usuarios;
+create table usuarios(
+    partidasId integer not null primary key,
+    ultimas text,
+    proximas text,
+    data text,
+    hora text
+);
+
+drop table administrador;
+create table administrador(
+    partidasId integer not null primary key,
+    ultimas text,
+    proximas text,
+    data text,
+    hora text
+);

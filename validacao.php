@@ -1,5 +1,7 @@
 <?php
 
+namespace Douglas\Blog;
+
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Translation\FileLoader; 
 use Illuminate\Translation\Translator;
