@@ -16,11 +16,11 @@ require "model-trofeu.php";
     <header>
         
         <div>
-            <img style="width: 200px;" src="img/gremio logo.svg">
+            <img style="width: 200px;" src="../img/gremio logo.svg">
         </div>
 
         <nav>
-        <a href="index.php">Home</a>
+        <a href="../index.php">Home</a>
         <a href="trofeus.php">Troféus</a>
             <a href="novo-trofeu.html">Novo Troféu</a>
             <a href="gerenciar-trofeu.php">Gerenciar Troféus</a>
@@ -42,7 +42,7 @@ require "model-trofeu.php";
                         <div  style='text-align: center;' class='container'>
                             <div style='width: 100%; height: 550; alight-items: center;' class='card mb-4 rounded-3 shadow-sm'>
                                 <div class='card-header py-3'>
-                                <img src='img/taças/$trofeu_img.jpg'> 
+                                <img src='../img/taças/$trofeu_img.jpg'> 
                                 </div>
                                 <div id='card-body' class='card-body'>
                                     <h1 style='' class='card-title pricing-card-title'>$trofeu_nome

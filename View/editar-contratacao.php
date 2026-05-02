@@ -1,7 +1,7 @@
 <?php
 $id_contratacao = $_GET['id'];
 
-require("conectar_com_banco.php");
+require("../conectar_com_banco.php");
 
 $sql_dados_contratacao = "
 SELECT contratacaoId, nome, posicao, time, idade, nacionalidade, valor, img

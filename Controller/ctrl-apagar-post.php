@@ -1,7 +1,7 @@
 <?php
 $id_post = $_GET['id'];
 
-require("conectar_com_banco.php");
+require("../conectar_com_banco.php");
 
 $sql = "
 DELETE FROM posts
@@ -14,5 +14,5 @@ $stmt->bindValue(':id_post', $id_post);
 
 $stmt->execute(); 
 
-require "gerenciar-post.php";
+require "../View/gerenciar-post.php";
 ?>

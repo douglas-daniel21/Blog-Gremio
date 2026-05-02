@@ -1,5 +1,5 @@
 <?php
-require "model-contratacoes.php";
+require "../Model/model-contratacoes.php";
 ?>
 
 <!DOCTYPE html>

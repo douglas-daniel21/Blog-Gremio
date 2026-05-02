@@ -1,6 +1,10 @@
 <?php
+require("../conectar_com_banco.php");
+
 $nome = $_POST['usuario_nome'];
 $senha = $_POST['usuario_senha'];
+
+
 
 try{
 
@@ -11,7 +15,7 @@ try{
     VALUES (:nome, :senha);
     ";
 
-    require("conectar_com_banco.php");
+  
 
     $stmt = $conn->prepare($sql);
 
@@ -30,5 +34,5 @@ try{
 ?>
 
 <?php
-require "../view/criar-usuario.php";
+require "../index.php";
 ?>

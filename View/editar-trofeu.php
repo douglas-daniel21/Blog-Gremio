@@ -1,7 +1,7 @@
 <?php
 $id_trofeu = $_GET['id'];
 
-require("conectar_com_banco.php");
+require("../conectar_com_banco.php");
 
 $sql_dados_trofeus = "
 SELECT trofeuId, nome, quantidade, ultimo, img

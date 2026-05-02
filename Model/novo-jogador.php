@@ -11,7 +11,7 @@ INSERT INTO jogadores (nome, posicao, idade, camisa, nacionalidade,img)
 VALUES (:nome, :posicao, :idade, :camisa, :nacionalidade, :img);
 ";
 
-require("conectar_com_banco.php");
+require("../conectar_com_banco.php");
 
 $stmt = $conn->prepare($sql);
 
@@ -28,5 +28,5 @@ $id = $conn->lastInsertId();
 ?>
 
 <?php
-require "jogador.php";
+require "../View/jogador.php";
 ?>

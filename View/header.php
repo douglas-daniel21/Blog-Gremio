@@ -46,7 +46,7 @@
                 <div style="padding: 10px;">
                 <a style="font-family: arial; padding-left: 30px; padding-right: 30px; padding-top: 8px; padding-bottom: 8px;" 
                 class="btn btn-sm btn-outline-primary" href="/require/login.html">
-                    <img style="width: 20px;" src="img/flork3.jpg">
+                    <img style="width: 20px;" src="">
                     Entrar
                 </a>
                 </div>
@@ -60,10 +60,10 @@
     <div>
         <nav class="nav nav-underline justify-content-between"> 
             <a style="color: white;" class="nav-item nav-link link-body-emphasis active" href="#">Tudo </a> 
-            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="../posts.php">Posts</a> 
-            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="../jogador.php">Jogadores</a> 
-            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="../contratacoes.php">Contratações</a> 
-            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="../trofeus.php">Troféus</a> 
+            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="posts.php">Posts</a> 
+            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="jogador.php">Jogadores</a> 
+            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="contratacoes.php">Contratações</a> 
+            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="trofeus.php">Troféus</a> 
             <hr>
         </nav>
     </div>

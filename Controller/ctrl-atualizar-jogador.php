@@ -7,6 +7,8 @@ $nacionalidade = $_POST['jogador_nacionalidade'];
 $img = $_POST['jogador_img'];
 $id = $_POST['jogador_id'];
 
+require("../conectar_com_banco.php");
+
 $sql = "
 UPDATE jogadores
 SET nome = :nome,
@@ -17,8 +19,6 @@ SET nome = :nome,
     img = :img
 WHERE jogadorId = :id_jogador;
 ";
-
-$conn = new PDO("sqlite:banco_blog.db");
 
 $stmt = $conn->prepare($sql);
 
@@ -34,5 +34,5 @@ $stmt->execute();
 ?>
 
 <?php
-require "gerenciar-jogador.php";
+require "../View/gerenciar-jogador.php";
 ?>

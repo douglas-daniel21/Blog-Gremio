@@ -1,6 +1,6 @@
 <?php
 
-require("conectar_com_banco.php");
+require("../conectar_com_banco.php");
 
 $sql_dados_contratacoes = "
 SELECT nome, posicao, time, idade, nacionalidade, valor, img

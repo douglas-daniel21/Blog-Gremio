@@ -1,6 +1,6 @@
 <?php
 
-require("conectar_com_banco.php");
+require("../conectar_com_banco.php");
 
 $sql_dados_posts = "
 SELECT postId, titulo, autor, data
@@ -21,7 +21,7 @@ $rs_posts = $conn->query($sql_dados_posts);
 <body>
     <header>
         <div>
-            <img style="width: 200px;" src="img/gremio logo.svg">
+            <img style="width: 200px;" src="../img/gremio logo.svg">
         </div>
 
     <nav>

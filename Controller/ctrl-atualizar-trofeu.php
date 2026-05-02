@@ -5,6 +5,8 @@ $ultimo = $_POST['trofeu_ultimo'];
 $img = $_POST['trofeu_img'];
 $id = $_POST['trofeu_id'];
 
+require("../conectar_com_banco.php");
+
 $sql = "
 UPDATE trofeus
 SET nome = :nome,
@@ -14,7 +16,7 @@ SET nome = :nome,
 WHERE trofeuId = :id_trofeu;
 ";
 
-$conn = new PDO("sqlite:banco_blog.db");
+
 
 $stmt = $conn->prepare($sql);
 
@@ -28,5 +30,5 @@ $stmt->execute();
 ?>
 
 <?php
-require "gerenciar-trofeu.php";
+require "../View/gerenciar-trofeu.php";
 ?>

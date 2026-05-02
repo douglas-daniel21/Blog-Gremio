@@ -1,5 +1,5 @@
 <?php
-require "model-jogador.php";
+require "../model-jogador.php";
 ?>
 
 <!DOCTYPE html>
@@ -16,11 +16,11 @@ require "model-jogador.php";
 
     <header>
         <div>
-            <img style="width: 200px;" src="img/gremio logo.svg">
+            <img style="width: 200px;" src="../img/gremio logo.svg">
         </div>
         
         <nav>
-            <a href="index.php">Home</a>
+            <a href="../index.php">Home</a>
             <a href="jogador.php">Jogadores</a>
             <a href="novo-jogador.html">Novo Jogador</a>
             <a href="gerenciar-jogador.php">Gerenciar Jogador</a>

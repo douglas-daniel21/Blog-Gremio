@@ -8,6 +8,8 @@ $autor = $_POST['posts_autor'];
 $img = $_POST['posts_img'];
 $id = $_POST['posts_id'];
 
+require("../conectar_com_banco.php");
+
 $sql = "
 UPDATE posts
 SET titulo = :titulo,
@@ -18,8 +20,6 @@ SET titulo = :titulo,
     img = :img
 WHERE postId = :id_post;
 ";
-
-$conn = new PDO("sqlite:banco_blog.db");
 
 $stmt = $conn->prepare($sql);
 
@@ -35,5 +35,5 @@ $stmt->execute();
 ?>
 
 <?php
-require "gerenciar-post.php";
+require "../View/gerenciar-post.php";
 ?>

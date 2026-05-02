@@ -1,5 +1,5 @@
 <?php
-require "model-post.php";
+require "../Model/model-post.php";
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ require "model-post.php";
                         href='pagina-post.php?id=$id'>Ler mais</a>
                     </div>
                     <div class='col-auto d-none d-lg-block'> 
-                        <img style='width: 180px;' src='img/icones/$posts_img.svg'>    
+                        <img style='width: 180px;' src='../img/icones/$posts_img.svg'>    
                     </div>
                 </div>
             </div>

@@ -8,6 +8,9 @@ $valor = $_POST['contratacao_valor'];
 $img = $_POST['contratacao_img'];
 $id = $_POST['contratacao_id'];
 
+require("../conectar_com_banco.php");
+
+
 $sql = "
 UPDATE contratacoes
 SET nome = :nome,
@@ -21,7 +24,7 @@ SET nome = :nome,
 WHERE contratacaoId = :id_contratacao;
 ";
 
-$conn = new PDO("sqlite:banco_blog.db");
+
 
 $stmt = $conn->prepare($sql);
 
@@ -38,5 +41,5 @@ $stmt->execute();
 ?>
 
 <?php
-require "gerenciar-contratacao.php";
+require "../View/gerenciar-contratacao.php";
 ?>

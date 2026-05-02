@@ -1,6 +1,6 @@
 <?php
 
-require("conectar_com_banco.php");
+require("../conectar_com_banco.php");
 
 $sql_dados_trofeus = "
 SELECT trofeuId, nome, ultimo, quantidade
@@ -21,7 +21,7 @@ $rs_trofeus = $conn->query($sql_dados_trofeus);
 <body>
     <header>
         <div>
-            <img style="width: 200px;" src="img/gremio logo.svg">
+            <img style="width: 200px;" src="../img/gremio logo.svg">
         </div>
 
     <nav>

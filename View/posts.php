@@ -1,5 +1,5 @@
 <?php
-require "model-post.php";
+require "../Model/model-post.php";
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ require "model-post.php";
             <img style="width: 200px;" src="img/gremio logo.svg">
         </div>
         <nav>
-        <a href="index.php">Home</a>
+        <a href="../index.php">Home</a>
         <a href="posts.php">Posts</a>
             <a href="novo-post.html">Novo Post</a>
             <a href="gerenciar-post.php">Gerenciar Posts</a>
@@ -56,7 +56,7 @@ require "model-post.php";
                         </a>
                     </div>
                     <div class='col-auto d-none d-lg-block'> 
-                        <img style='width: 180px;' src='Img/icones/$posts_img.svg'>    
+                        <img style='width: 180px;' src='../Img/icones/$posts_img.svg'>    
                     </div>
                 </div>
             </div>

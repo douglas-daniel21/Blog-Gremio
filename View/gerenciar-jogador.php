@@ -1,6 +1,6 @@
 <?php
 
-require("conectar_com_banco.php");
+require("../conectar_com_banco.php");
 
 $sql_dados_jogadores = "
 SELECT jogadorId, nome, posicao, idade, camisa, nacionalidade
@@ -21,7 +21,7 @@ $rs_jogadores = $conn->query($sql_dados_jogadores);
 <body>
     <header>
         <div>
-            <img style="width: 200px;" src="img/gremio logo.svg">
+            <img style="width: 200px;" src="../img/gremio logo.svg">
         </div>
 
     <nav>
