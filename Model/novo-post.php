@@ -1,33 +1,10 @@
 <?php
-require("validacao.php");
-
 $titulo = $_POST['post_titulo'];
 $resumo = $_POST['post_resumo'];
 $texto = $_POST['post_texto'];
 $autor = $_POST['post_autor'];
 $data = $_POST['post_data'];
 $img = $_POST['post_img'];
-
-$validation = new Validation();
-$data = $validation->validator(
-    $_POST,//Dados
-
-    [
-        "post_titulo" => "required|min:5",
-        "post_resumo" => "required|min:20",
-    ],//Regras
-
-    [
-        "post_titulo.required" => "O campo imdb é obrigatório.",
-        "post_titulo.min" => "O título do post deve ter no mínimo 20 caracteres",
-    ],//Messages
-);
-
-if($data->fails()){
-    echo json_encode(["success" => false, "message" => $data->errors()->all()]);
-    http_response_code(400);
-    exit;
-}
 
 $sql = "
 INSERT INTO posts (titulo, resumo, texto, autor, data, img)
