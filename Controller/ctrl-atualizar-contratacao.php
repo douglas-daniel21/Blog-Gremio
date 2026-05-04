@@ -41,5 +41,5 @@ $stmt->execute();
 ?>
 
 <?php
-require "../View/gerenciar-contratacao.php";
+require __DIR__."/../View/gerenciar-contratacao.php";
 ?>

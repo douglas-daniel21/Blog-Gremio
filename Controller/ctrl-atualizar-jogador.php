@@ -34,5 +34,5 @@ $stmt->execute();
 ?>
 
 <?php
-require "../View/gerenciar-jogador.php";
+require __DIR__."/../View/gerenciar-jogador.php";
 ?>

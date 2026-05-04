@@ -14,5 +14,5 @@ $stmt->bindValue(':id_post', $id_post);
 
 $stmt->execute(); 
 
-require "../View/gerenciar-post.php";
+require __DIR__."/../View/gerenciar-post.php";
 ?>

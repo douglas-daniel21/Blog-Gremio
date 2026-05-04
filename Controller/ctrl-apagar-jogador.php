@@ -14,5 +14,5 @@ $stmt->bindValue(':id_jogador', $id_jogador);
 
 $stmt->execute(); 
 
-require "../View/gerenciar-jogador.php";
+require __DIR__."/../View/gerenciar-jogador.php";
 ?>

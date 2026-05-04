@@ -14,5 +14,5 @@ $stmt->bindValue(':id_trofeu', $id_trofeu);
 
 $stmt->execute(); 
 
-require "../View/gerenciar-trofeu.php";
+require __DIR__."/../View/gerenciar-trofeu.php";
 ?>

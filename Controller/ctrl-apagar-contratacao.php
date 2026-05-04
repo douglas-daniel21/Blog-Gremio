@@ -14,5 +14,5 @@ $stmt->bindValue(':id_contratacao', $id_contratacao);
 
 $stmt->execute(); 
 
-require "../View/gerenciar-contratacao.php";
+require __DIR__."/../View/gerenciar-contratacao.php";
 ?>

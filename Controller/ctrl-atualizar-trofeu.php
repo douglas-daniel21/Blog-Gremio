@@ -30,5 +30,5 @@ $stmt->execute();
 ?>
 
 <?php
-require "../View/gerenciar-trofeu.php";
+require __DIR__."/../View/gerenciar-trofeu.php";
 ?>
