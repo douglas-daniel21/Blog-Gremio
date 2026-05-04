@@ -1,5 +1,5 @@
 <?php
-require "model-trofeu.php";
+require  __DIR__."/../Model/model-trofeu.php";
 ?>
 
 <!DOCTYPE html>
@@ -20,8 +20,8 @@ require "model-trofeu.php";
         </div>
 
         <nav>
-        <a href="../index.php">Home</a>
-        <a href="trofeus.php">Troféus</a>
+            <a href="../index.php">Home</a>
+            <a href="trofeus.php">Troféus</a>
             <a href="novo-trofeu.html">Novo Troféu</a>
             <a href="gerenciar-trofeu.php">Gerenciar Troféus</a>
         </nav>

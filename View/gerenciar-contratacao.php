@@ -1,6 +1,6 @@
 <?php
 
-require("../conectar_com_banco.php");
+require(__DIR__."/../conectar_com_banco.php");
 
 $sql_dados_contratacoes = "
 SELECT contratacaoId, nome, posicao, time, idade, nacionalidade, valor
@@ -25,12 +25,12 @@ $rs_contratacoes = $conn->query($sql_dados_contratacoes);
             <img style="width: 200px;" src="../img/gremio logo.svg">
         </div>
 
-    <nav>
-        <a href="index.php">Home</a>
-        <a href="contratacoes.php">Contratações</a>
-        <a href="nova-contratacao.html">Nova Contratação</a>
-        <a href="gerenciar-contratacao.php">Gerenciar Contratações</a>
-    </nav>
+        <nav>
+            <a href="../index.php">Home</a>
+            <a href="contratacoes.php">Contratações</a>
+            <a href="nova-contratacao.html">Novo Contratação</a>
+            <a href="gerenciar-contratacao.php">Gerenciar Contratações</a>
+        </nav>  
     
     </header>
     <h2 style="text-align: center;">Gerenciar Contratação</h2>

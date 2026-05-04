@@ -8,7 +8,7 @@ $valor = $_POST['contratacao_valor'];
 $img = $_POST['contratacao_img'];
 $id = $_POST['contratacao_id'];
 
-require("../conectar_com_banco.php");
+require(__DIR__."/../conectar_com_banco.php");
 
 
 $sql = "

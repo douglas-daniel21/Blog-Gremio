@@ -11,7 +11,7 @@ INSERT INTO posts (titulo, resumo, texto, autor, data, img)
 VALUES (:titulo, :resumo, :texto, :autor, :data, :img);
 ";
 
-require("../conectar_com_banco.php");
+require(__DIR__."/../conectar_com_banco.php");
 
 $stmt = $conn->prepare($sql);
 

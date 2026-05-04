@@ -1,7 +1,7 @@
 <?php
 $id_post = $_GET['id'];
 
-require("../conectar_com_banco.php");
+require(__DIR__."/../conectar_com_banco.php");
 
 $sql = "
 DELETE FROM posts

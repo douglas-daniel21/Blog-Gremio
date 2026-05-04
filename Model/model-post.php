@@ -1,6 +1,5 @@
 <?php
-
-require("../conectar_com_banco.php");
+require(__DIR__."/../conectar_com_banco.php");
 
 $sql_dados_posts = "
 SELECT postId, titulo, resumo, texto, data, autor, img

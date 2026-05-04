@@ -1,5 +1,5 @@
 <?php
-require "../Model/model-contratacoes.php";
+require  __DIR__."/../Model/model-contratacoes.php";
 ?>
 
 <!DOCTYPE html>
@@ -20,11 +20,11 @@ require "../Model/model-contratacoes.php";
         </div>
         
         <nav>
-            <a href="index.php">Home</a>
+            <a href="../index.php">Home</a>
             <a href="contratacoes.php">Contratações</a>
             <a href="nova-contratacao.html">Novo Contratação</a>
             <a href="gerenciar-contratacao.php">Gerenciar Contratações</a>
-            </nav>   
+        </nav>   
    
     </header>
 

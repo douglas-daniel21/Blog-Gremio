@@ -9,7 +9,7 @@ INSERT INTO trofeus (nome, quantidade, ultimo, img)
 VALUES (:nome, :quantidade, :ultimo, :img);
 ";
 
-require("../conectar_com_banco.php");
+require(__DIR__."/../conectar_com_banco.php");
 
 $stmt = $conn->prepare($sql);
 
@@ -24,5 +24,5 @@ $id = $conn->lastInsertId();
 ?>
 
 <?php
-require "../View/trofeus.php";
+require  __DIR__."../View/trofeus.php";
 ?>

@@ -7,7 +7,7 @@ $nacionalidade = $_POST['jogador_nacionalidade'];
 $img = $_POST['jogador_img'];
 $id = $_POST['jogador_id'];
 
-require("../conectar_com_banco.php");
+require(__DIR__."/../conectar_com_banco.php");
 
 $sql = "
 UPDATE jogadores

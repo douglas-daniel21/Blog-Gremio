@@ -15,17 +15,17 @@
         </div>
 
         <nav>
-            <a href="index.php">Home</a>
+            <a href="../index.php">Home</a>
             <a href="jogador.php">Jogadores</a>
             <a href="novo-jogador.html">Novo Jogador</a>
             <a href="gerenciar-jogador.php">Gerenciar Jogador</a>
-        </nav>
+        </nav> 
     </header>
     <h2 style="text-align: center;">Novo Jogador</h2>
     <form action="novo-jogador.php" method="post">
         
         <label>Nome:</label>
-        <input type="text" style="width: 100%;" name="jogador_nome" pattern="[A-Z]+" required>
+        <input type="text" style="width: 100%;" name="jogador_nome" pattern="[A-Z-a-z]+" required>
 
         <label>Posição:</label>
         <input type="text" style="width: 100%;" name="jogador_posicao" pattern="[A-Z]+"  minlength="2"  maxlength="3" required> 

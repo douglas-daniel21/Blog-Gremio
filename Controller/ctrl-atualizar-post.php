@@ -8,7 +8,7 @@ $autor = $_POST['posts_autor'];
 $img = $_POST['posts_img'];
 $id = $_POST['posts_id'];
 
-require("../conectar_com_banco.php");
+require(__DIR__."/../conectar_com_banco.php");
 
 $sql = "
 UPDATE posts

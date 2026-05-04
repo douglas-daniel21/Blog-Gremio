@@ -1,5 +1,5 @@
 <?php
-require "../model-jogador.php";
+require  __DIR__."/../Model/model-jogador.php";
 ?>
 
 <!DOCTYPE html>

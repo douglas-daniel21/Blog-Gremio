@@ -12,7 +12,7 @@ INSERT INTO contratacoes (nome, posicao, time, idade, nacionalidade, valor, img)
 VALUES (:nome, :posicao, :time, :idade, :nacionalidade, :valor, :img);
 ";
 
-require("../conectar_com_banco.php");
+require(__DIR__."/../conectar_com_banco.php");
 
 $stmt = $conn->prepare($sql);
 

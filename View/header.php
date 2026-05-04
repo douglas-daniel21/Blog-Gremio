@@ -60,10 +60,10 @@
     <div>
         <nav class="nav nav-underline justify-content-between"> 
             <a style="color: white;" class="nav-item nav-link link-body-emphasis active" href="#">Tudo </a> 
-            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="posts.php">Posts</a> 
-            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="jogador.php">Jogadores</a> 
-            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="contratacoes.php">Contratações</a> 
-            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="trofeus.php">Troféus</a> 
+            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="View/posts.php">Posts</a> 
+            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="View/jogador.php">Jogadores</a> 
+            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="View/contratacoes.php">Contratações</a> 
+            <a style="color: white;" class="nav-item nav-link link-body-emphasis" href="View/trofeus.php">Troféus</a> 
             <hr>
         </nav>
     </div>

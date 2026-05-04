@@ -1,5 +1,5 @@
 <?php
-require "../Model/model-post.php";
+require  __DIR__."/../Model/model-post.php";
 ?>
 
 <!DOCTYPE html>
