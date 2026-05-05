@@ -37,14 +37,14 @@ $img = $um_jogador['img'];
         </div>
 
         <nav>
-            <a href="index.php">Home</a>
-            <a href="jogador.php">Jogadores</a>
-            <a href="novo-jogador.html">Novo Jogador</a>
-            <a href="gerenciar-jogador.php">Deletar Jogador</a>
+            <a href="/index.php">Home</a>
+            <a href="/View/jogador.php">Jogadores</a>
+            <a href="/View/novo-jogador.html">Novo Jogador</a>
+            <a href="/View/gerenciar-jogador.php">Deletar Jogador</a>
         </nav>
     </header>
     <h2 style="text-align: center;">Editar Jogador</h2>
-    <form action="ctrl-atualizar-jogador.php" method="post">
+    <form action="../Controller/ctrl-atualizar-jogador.php" method="post">
         
         <label>Nome:</label>
         <input type="text" style="width: 100%;" name="jogador_nome" value="<?=$nome?>" required>

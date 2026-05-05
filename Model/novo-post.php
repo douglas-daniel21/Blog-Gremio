@@ -28,5 +28,5 @@ $id = $conn->lastInsertId();
 ?>
 
 <?php
-require "../View/posts.php";
+require  __DIR__."/../View/posts.php";
 ?>

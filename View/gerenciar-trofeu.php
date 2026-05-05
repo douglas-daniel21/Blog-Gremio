@@ -56,10 +56,10 @@ $rs_trofeus = $conn->query($sql_dados_trofeus);
                     <td <td style='text-align: center;'>$ultimo</td>
                     <td style='text-align: center;'>
                         <a style='color: black; background-color: red; border-radius: 8px; padding: 8px; font-family: Arial, Helvetica, sans-serif;'  
-                        href='ctrl-apagar-trofeu.php?id=$id'>Deletar</a>
+                        href='../Controller/ctrl-apagar-trofeu.php?id=$id'>Deletar</a>
                         
                         <a style='color: black; background-color: orange; border-radius: 8px; padding: 8px; padding-left: 10px; font-family: Arial, Helvetica, sans-serif;'  
-                        href='editar-trofeu.php?id=$id'>Editar</a>
+                        href='../View/editar-trofeu.php?id=$id'>Editar</a>
                 </tr>
                 ";
 

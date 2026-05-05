@@ -26,10 +26,10 @@ $rs_contratacoes = $conn->query($sql_dados_contratacoes);
         </div>
 
         <nav>
-            <a href="../index.php">Home</a>
-            <a href="contratacoes.php">Contratações</a>
-            <a href="nova-contratacao.html">Novo Contratação</a>
-            <a href="gerenciar-contratacao.php">Gerenciar Contratações</a>
+            <a href="/index.php">Home</a>
+            <a href="/View/contratacoes.php">Contratações</a>
+            <a href="/View/nova-contratacao.html">Novo Contratação</a>
+            <a href="/View/gerenciar-contratacao.php">Gerenciar Contratações</a>
         </nav>  
     
     </header>
@@ -64,10 +64,10 @@ $rs_contratacoes = $conn->query($sql_dados_contratacoes);
                     <td style='text-align: center;'>$nacionalidade</td>
                     <td style='text-align: center;'>
                         <a style='color: black; background-color: red; border-radius: 8px; padding: 8px; font-family: Arial, Helvetica, sans-serif;'  
-                        href='ctrl-apagar-contratacao.php?id=$id'>Deletar</a>
+                        href='../Controller/ctrl-apagar-contratacao.php?id=$id'>Deletar</a>
                         
                         <a style='color: black; background-color: orange; border-radius: 8px; padding: 8px; padding-left: 10px; font-family: Arial, Helvetica, sans-serif;'  
-                        href='editar-contratacao.php?id=$id'>Editar</a>
+                        href='../View/editar-contratacao.php?id=$id'>Editar</a>
                     </td>
                 </tr>
                 ";

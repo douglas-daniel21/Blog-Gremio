@@ -20,11 +20,11 @@ require  __DIR__."/../Model/model-jogador.php";
         </div>
         
         <nav>
-            <a href="../index.php">Home</a>
-            <a href="jogador.php">Jogadores</a>
-            <a href="novo-jogador.html">Novo Jogador</a>
-            <a href="gerenciar-jogador.php">Gerenciar Jogador</a>
-        </nav>   
+            <a href="/index.php">Home</a>
+            <a href="/View/jogador.php">Jogadores</a>
+            <a href="/View/novo-jogador.html">Novo Jogador</a>
+            <a href="/View/gerenciar-jogador.php">Deletar Jogador</a>
+        </nav>
     </header>
 
     <main class="container">

@@ -37,16 +37,16 @@ $img = $um_post['img'];
             <img style="width: 200px;" src="img/gremio logo.svg">
         </div>
         <nav>
-            <a href="index.php">Home</a>
-            <a href="posts.php">Posts</a>
-            <a href="novo-post.html">Novo Post</a>
-            <a href="deletar-post.php">Deletar Post</a>
+            <a href="/index.php">Home</a>
+            <a href="/View/posts.php">Posts</a>
+            <a href="/View/novo-post.html">Novo Post</a>
+            <a href="/View/gerenciar-post.php">Gerenciar Posts</a>
         </nav>
 
     </header>
     
     <h2 style="text-align: center;">Editar Post</h2>
-    <form action="ctrl-atualizar-post.php" method="post">
+    <form action="../Controller/ctrl-atualizar-post.php" method="post">
         
         <label>Título:</label>
         <input type="text" style="width: 100%;" name="posts_titulo" value="<?=$titulo?>"required>

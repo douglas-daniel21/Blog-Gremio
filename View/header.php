@@ -44,9 +44,9 @@
                 -->
 
                 <div style="padding: 10px;">
-                <a style="font-family: arial; padding-left: 30px; padding-right: 30px; padding-top: 8px; padding-bottom: 8px;" 
-                class="btn btn-sm btn-outline-primary" href="/require/login.html">
-                    <img style="width: 20px;" src="">
+                <a style="font-family: arial; padding-left: 25px; padding-right: 30px; padding-top: 8px; padding-bottom: 8px;" 
+                class="btn btn-sm btn-outline-primary" href="/View/login.html">
+                    <img style="width: 20px;" src="../img/user.png">
                     Entrar
                 </a>
                 </div>

@@ -1,17 +1,6 @@
 .open banco_blog.db
 .mode column
 
-drop table blog;
-create table blog(
-    id integer not null primary key,
-    nome text,
-    autor text,
-    email_adm text
-);
-
-insert into blog(nome, autor, email_adm)
-values('Blog do Grêmio','Douglas Daniel', 'douglas@gmail.com');
-
 
 drop table posts;
 create table posts(
@@ -69,29 +58,18 @@ create table contratacoes(
 insert into contratacoes (nome, posicao, time, idade, nacionalidade, valor, img)
 values('Enamorado', 'PD', 'Junior Barranquila', 27, 'Colombiano', '50000', 'enamorado');
 
-drop table partidas;
-create table partidas(
-    partidasId integer not null primary key,
-    ultimas text,
-    proximas text,
-    data text,
-    hora text
-);
+
 
 drop table usuarios;
 create table usuarios(
-    partidasId integer not null primary key,
-    ultimas text,
-    proximas text,
-    data text,
-    hora text
+    Id integer not null primary key,
+    email text,
+    senha text
 );
 
 drop table administrador;
 create table administrador(
-    partidasId integer not null primary key,
-    ultimas text,
-    proximas text,
-    data text,
-    hora text
+    Id integer not null primary key,
+    email text,
+    senha text
 );

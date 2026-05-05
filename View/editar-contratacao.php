@@ -39,11 +39,11 @@ $img = $uma_contratacao['img'];
         </div>
                    
         <nav>
-            <a href="index.php">Home</a>
-            <a href="contratacoes.php">Contratações</a>
-            <a href="nova-contratacao.html">Nova Contratação</a>
-            <a href="gerenciar-contratacao.php">Gerenciar Contratações</a>
-        </nav>
+            <a href="/index.php">Home</a>
+            <a href="/View/contratacoes.php">Contratações</a>
+            <a href="/View/nova-contratacao.html">Novo Contratação</a>
+            <a href="/View/gerenciar-contratacao.php">Gerenciar Contratações</a>
+        </nav>  
     </header>
     <h2 style="text-align: center;">Editar Contratação</h2>
     <form action="ctrl-atualizar-contratacao.php"  method="post">

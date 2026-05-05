@@ -23,12 +23,12 @@ $rs_posts = $conn->query($sql_dados_posts);
             <img style="width: 200px;" src="../img/gremio logo.svg">
         </div>
 
-    <nav>
-        <a href="index.php">Home</a>
-        <a href="posts.php">Posts</a>
-        <a href="novo-post.html">Novo Post</a>
-        <a href="gerenciar-post.php">Gerenciar Posts</a>
-    </nav>
+        <nav>
+            <a href="/index.php">Home</a>
+            <a href="/View/posts.php">Posts</a>
+            <a href="/View/novo-post.html">Novo Post</a>
+            <a href="/View/gerenciar-post.php">Gerenciar Posts</a>
+        </nav>
     
     </header>
     <h2 style="text-align: center;">Gerenciar Posts</h2>
@@ -56,10 +56,10 @@ $rs_posts = $conn->query($sql_dados_posts);
                     <td <td style='text-align: center;'>$data</td>
                     <td style='text-align: center;'>
                         <a style='color: black; background-color: red; border-radius: 8px; padding: 8px; font-family: Arial, Helvetica, sans-serif;'  
-                        href='ctrl-apagar-post.php?id=$id'>Deletar</a>
+                        href='../Controller/ctrl-apagar-post.php?id=$id'>Deletar</a>
                         
                         <a style='color: black; background-color: orange; border-radius: 8px; padding: 8px; padding-left: 10px; font-family: Arial, Helvetica, sans-serif;'  
-                        href='editar-post.php?id=$id'>Editar</a>
+                        href='../View/editar-post.php?id=$id'>Editar</a>
                     </td>
                 </tr>
                 ";

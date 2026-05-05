@@ -1,39 +1,32 @@
 <?php
 require(__DIR__."/../conectar_com_banco.php");
 
-$nome = $_POST['usuario_nome'];
+$email = $_POST['usuario_email'];
 $senha = $_POST['usuario_senha'];
-
-
 
 try{
 
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
     $sql = "
-    INSERT INTO usuarios (nome, senha)
-    VALUES (:nome, :senha);
+    INSERT INTO usuarios (email, senha)
+    VALUES (:email, :senha);
     ";
-
-  
 
     $stmt = $conn->prepare($sql);
 
-    $stmt->bindValue(':nome', $nome);
+    $stmt->bindValue(':email', $email);
     $stmt->bindValue(':senha', $senhaHash);
 
     if($stmt->execute()){
         $id = $conn->lastInsertId();
-        echo "Usuario cadastrado com sucesso!";
     }
         
 }catch(PDOException $e){
     echo "ERRO ao conectar: ". $e->getMessage();
 } 
-
-
 ?>
 
 <?php
-require "../index.php";
+require __DIR__."/../index.php";
 ?>

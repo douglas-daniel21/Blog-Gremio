@@ -23,12 +23,12 @@ $rs_jogadores = $conn->query($sql_dados_jogadores);
             <img style="width: 200px;" src="../img/gremio logo.svg">
         </div>
 
-    <nav>
-        <a href="index.php">Home</a>
-        <a href="jogador.php">Jogadores</a>
-        <a href="novo-jogador.html">Novo Jogador</a>
-        <a href="gerenciar-jogador.php">Gerenciar Jogador</a>
-    </nav>
+        <nav>
+            <a href="/index.php">Home</a>
+            <a href="/View/jogador.php">Jogadores</a>
+            <a href="/View/novo-jogador.html">Novo Jogador</a>
+            <a href="/View/gerenciar-jogador.php">Deletar Jogador</a>
+        </nav>
     
     </header>
     <h2 style="text-align: center;">Deletar Jogador</h2>
@@ -63,10 +63,10 @@ $rs_jogadores = $conn->query($sql_dados_jogadores);
                     <td style='text-align: center;'>$nacionalidade</td>
                     <td style='text-align: center;'>
                         <a style='color: black; background-color: red; border-radius: 8px; padding: 8px; font-family: Arial, Helvetica, sans-serif;'  
-                        href='ctrl-apagar-jogador.php?id=$id'>Deletar</a>
+                        href='../Controller/ctrl-apagar-jogador.php?id=$id'>Deletar</a>
                         
                         <a style='color: black; background-color: orange; border-radius: 8px; padding: 8px; padding-left: 10px; font-family: Arial, Helvetica, sans-serif;'  
-                        href='editar-jogador.php?id=$id'>Editar</a>
+                        href='../View/editar-jogador.php?id=$id'>Editar</a>
                     </td>
                 </tr>
                 ";

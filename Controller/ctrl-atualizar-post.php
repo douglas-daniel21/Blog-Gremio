@@ -35,5 +35,5 @@ $stmt->execute();
 ?>
 
 <?php
-require __DIR__."/../View/gerenciar-post.php";
+require dirname(__DIR__,1)."/View/gerenciar-post.php";
 ?>

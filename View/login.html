@@ -22,21 +22,47 @@
                 <a type="button" href="../header.php" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
             </div>
             <div class="modal-body p-5 pt-0">
-                <form class="">
+                <form action="../Model/"  method="post">
                     <div class="form-floating mb-3"> 
-                        <input type="email" class="form-control rounded-3" id="floatingInput"
-                        placeholder="name@example.com"> 
+                        <input type="email" name="usuario_email" class="form-control rounded-3" id="floatingInput"
+                        placeholder="name@example.com" requered minlength="1">
+                        
                         <label for="floatingInput">Endereço Email@example.com</label> 
                     </div>
                     <div class="form-floating mb-3"> 
-                        <input type="password" class="form-control rounded-3" 
-                        placeholder="Password"> 
-                        <label for="floatingPassword">Senha</label>
+                        <input type="password" name="usuario_senha" id="senha" class="form-control rounded-3" 
+                        placeholder="Digite sua senha">
+
+                        <label>Senha</label>
+
+                        <div>
+                            <input type="checkbox" id="checkMostrar" onclick="toggleSenha()">
+                            <label for="checkMostrar" style="font-size: 14px; cursor: pointer;">
+                                Mostrar senha
+                            </label>
+                        </div>
+                        
+
+
+                        </button>
                     </div>
+                    <script>
+                        function toggleSenha() {
+                            // Pegamos o input pelo ID
+                            const inputSenha = document.getElementById('senha');
+                            
+                            // Verificamos o tipo atual: se for password, vira text; se for text, vira password
+                            if (inputSenha.type === "password") {
+                                inputSenha.type = "text";
+                            } else {
+                                inputSenha.type = "password";
+                            }
+                        }
+                    </script>
 
                     <div style="text-align: center; padding: 10px; width: 100%" class="container">
-                        <a href="../header.php" style="color: white;background-color: #007bff; padding: 13px; padding-left: 129px; padding-right: 129px; border-radius: 10px; font-size: larger; font-family: Arial, Helvetica, sans-serif;">
-                            Continuar
+                        <a href="../Model/autenticacao.php" style="color: white;background-color: #007bff; padding: 13px; padding-left: 129px; padding-right: 129px; border-radius: 10px; font-size: larger; font-family: Arial, Helvetica, sans-serif;">
+                            Entrar
                         </a>
                     </div>
 
@@ -47,32 +73,6 @@
                     </div>
 
                     <small class="text-body-secondary">Ao clicar entrar você concordará com os termos de uso.</small>
-                    <hr class="my-4">
-                    <h2 class="fs-5 fw-bold mb-3">Ou logue com terceiros</h2> 
-
-                    <div style="text-align: center;">
-                    
-                        <button style="width: 70%;" class="py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit"> 
-                            <svg class="bi me-1" width="16" height="16" aria-hidden="true">
-                                <use xlink:href="#google"></use>
-                            </svg>
-                            Entrar com Google <img style="width: 30px; padding: 3px;" src="../img/icones/google.png"> 
-                        </button>
-
-                        <button style="width: 70%;" class="py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit"> 
-                            <svg class="bi me-1" width="16" height="16" aria-hidden="true">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                            Entrar com Facebook <img style="width: 30px; padding: 3px;" src="../img/icones/facebook.png"> 
-                        </button> 
-
-                        <button style="width: 70%;" class="py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit"> 
-                            <svg class="bi me-1" width="16" height="16" aria-hidden="true">
-                                <use xlink:href="#github"></use>
-                            </svg>
-                            Entrar com Apple <img style="width: 30px; padding-left: 8px;" src="../img/icones/apple.png"> 
-                        </button>
-                    </div>    
                 </form>
             </div>
         </div>
