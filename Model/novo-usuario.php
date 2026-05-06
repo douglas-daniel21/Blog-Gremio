@@ -20,11 +20,12 @@ try{
 
     if($stmt->execute()){
         $id = $conn->lastInsertId();
+        echo "Cadastrado com sucesso";
     }
         
 }catch(PDOException $e){
     echo "ERRO ao conectar: ". $e->getMessage();
-} 
+}
 ?>
 
 <?php

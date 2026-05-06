@@ -67,9 +67,12 @@ create table usuarios(
     senha text
 );
 
-drop table administrador;
-create table administrador(
+drop table administradores;
+create table administradores(
     Id integer not null primary key,
     email text,
     senha text
 );
+
+insert into administradores (email, senha)
+VALUES ('douglas@gmail.com', SHA2('minha_senha_segura', 256));
