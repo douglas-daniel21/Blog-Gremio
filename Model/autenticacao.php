@@ -26,7 +26,7 @@ try {
 
         echo "<script>
             alert('Bem vindo!');
-            window.location.href = 'login.html'; // Redireciona após o OK
+            window.location.href = '../index.php'; // Redireciona após o OK
           </script>";
         // Aqui você pode redirecionar: header("Location: painel.php");
         

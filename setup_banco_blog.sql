@@ -44,8 +44,8 @@ create table jogadores(
     img text
 );
 
-drop table contratacoes;
-create table contratacoes(
+DROP TABLE contratacoes;
+CREATE TABLE contratacoes(
     contratacaoId integer not null primary key,
     nome text,
     posicao text,
@@ -55,24 +55,28 @@ create table contratacoes(
     valor integer,
     img text
 );
-insert into contratacoes (nome, posicao, time, idade, nacionalidade, valor, img)
-values('Enamorado', 'PD', 'Junior Barranquila', 27, 'Colombiano', '50000', 'enamorado');
+INSERT INTO contratacoes (nome, posicao, time, idade, nacionalidade, valor, img)
+VALUES('Enamorado', 'PD', 'Junior Barranquila', 27, 'Colombiano', '50000', 'enamorado');
 
 
 
-drop table usuarios;
-create table usuarios(
-    Id integer not null primary key,
-    email text,
-    senha text
+DROP TABLE usuarios;
+CREATE TABLE usuarios(
+    Id INTEGER NOT NULL PRIMARY KEY,
+    email TEXT NOT NULL UNIQUE,
+    senha TEXT NOT NULL,
+    role TEXT NOT NULL DEFAULT 'user'
 );
+
+
 
 drop table administradores;
 create table administradores(
-    Id integer not null primary key,
-    email text,
-    senha text
+    Id integer NOT NULL PRiMARY KEY,
+    email text NOT NULL UNIQUE,
+    senha text NOT NULL,
+    role TEXT NOT NULL DEFAULT 'adm'
 );
 
-insert into administradores (email, senha)
-VALUES ('douglas@gmail.com', SHA2('minha_senha_segura', 256));
+INSERT INTO administradores (email, senha) 
+VALUES ('douglas@gmail.com', SHA2('Gremista21', 256));

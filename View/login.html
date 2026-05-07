@@ -10,7 +10,7 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 
-    <title>Document</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                 <a type="button" href="../index.php" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
             </div>
             <div class="modal-body p-5 pt-0">
-                <form action="../Model/novo-usuario.php"  method="post">
+                <form action="../Model/autenticacao.php"  method="post">
 
                         <input type="email" name="usuario_email" class="form-control rounded-3" id="floatingInput"
                         placeholder="name@example.com" requered minlength="1">
@@ -38,10 +38,7 @@
                                 Mostrar senha
                             </label>
                         </div>
-                        
 
-
-                        </button>
                     <script>
                         function toggleSenha() {
                             // Pegamos o input pelo ID
@@ -56,13 +53,18 @@
                         }
                     </script>
 
-                    <div style="text-align: center; padding: 20px; width: 100%" class="container">
-                        <input style="width: 100%; background-color: rgb(38, 120, 228); border-color: skyblue;" 
+                    <div style="text-align: center;padding-top: 15px;
+                    padding-left: 20px;padding-right: 20px; width: 100%" class="container">
+                        <input style="width: 100%; background-color: rgb(38, 120, 228); border-color: skyblue;
+                        font-family: Arial, Helvetica, sans-serif; font-size: larger;" 
                         type="submit" value = "Entrar">
                     </div>
 
-                    <div style="text-align: center; padding: 10px;" class="container">
-                        <a style="width: 100%; background-color: rgb(38, 120, 228); border-color: skyblue;">ss</a>
+                    <div style="text-align: center; padding: 20px; width: 100%; border-radius: 5px;" class="container">
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="background-color: gray;">
+                            <a href="criar-usuario.html" style="font-family: Arial, Helvetica, sans-serif; color: black;
+                            " class="nav-item nav-link">Criar conta</a>
+                        </button>
                     </div>
 
                     <small class="text-body-secondary">Ao clicar entrar você concordará com os termos de uso.</small>
@@ -72,7 +74,4 @@
     </div>
 
 </body>
-
 </html>
-
-

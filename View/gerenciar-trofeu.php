@@ -15,6 +15,7 @@ $rs_trofeus = $conn->query($sql_dados_trofeus);
 
 <head>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+    <title>Gerenciar Troféus</title>
 </head>
 
 <body>

@@ -20,10 +20,23 @@ require  __DIR__."/../Model/model-trofeu.php";
         </div>
 
         <nav>
-            <a href="/index.php">Home</a> 
-            <a href="/View/trofeus.php">Troféus</a>
-            <a href="/View/novo-trofeu.html">Novo Troféu</a>
-            <a href="/View/gerenciar-trofeu.php">Gerenciar Troféu</a>
+    <a href="/index.php">Voltar para home</a>
+    
+            <?php 
+                // 1. Iniciamos a sessão (obrigatório em toda página que usa $_SESSION)
+                if (session_status() === PHP_SESSION_NONE) {
+                    session_start();
+                }
+
+                // 2. Verificamos se 'user_role' EXISTE e se é 'adm'
+                // Mudei para 'adm' porque é o que está no seu banco de dados
+                if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'adm'): ?>
+        
+                <a href="/View/trofeus.php">Troféus</a>
+                <a href="/View/novo-trofeu.html">Novo Troféu</a>
+                <a href="/View/gerenciar-trofeu.php">Gerenciar Troféu</a>
+        
+            <?php endif; ?>
         </nav>
     </header>
     <main style="text-align: center;">

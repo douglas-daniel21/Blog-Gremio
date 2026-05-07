@@ -15,6 +15,7 @@ $rs_jogadores = $conn->query($sql_dados_jogadores);
 
 <head>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+    <title>Gerenciar Jogadores</title>
 </head>
 
 <body>

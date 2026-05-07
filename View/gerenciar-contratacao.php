@@ -16,7 +16,7 @@ $rs_contratacoes = $conn->query($sql_dados_contratacoes);
 
 <head>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
-    
+    <title>Gerenciar Contratações</title>
 </head>
 
 <body>

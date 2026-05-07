@@ -25,7 +25,7 @@ $img = $um_trofeu['img'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
 
-    <title>Novo Troféu</title>
+    <title>Editar Troféu</title>
 </head>
 <body>
     <header>

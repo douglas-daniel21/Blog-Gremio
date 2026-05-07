@@ -18,18 +18,35 @@ require  __DIR__."/../Model/model-post.php";
             <img style="width: 200px;" src="img/gremio logo.svg">
         </div>
         <nav>
-            <a href="../index.php">Home</a>
-            <a href="posts.php">Posts</a>
-            <a href="novo-post.html">Novo Post</a>
-            <a href="gerenciar-post.php">Gerenciar Posts</a>
+            <a href="../index.php">Voltar para home</a>
+            
+
+            <?php 
+                // 1. Iniciamos a sessão (obrigatório em toda página que usa $_SESSION)
+                if (session_status() === PHP_SESSION_NONE) {
+                    session_start();
+                }
+
+                // 2. Verificamos se 'user_role' EXISTE e se é 'adm'
+                // Mudei para 'adm' porque é o que está no seu banco de dados
+                if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'adm'): ?>
+                
+                <a href="posts.php">Posts</a>
+                <a href="novo-post.html">Novo Post</a>
+                <a href="gerenciar-post.php">Gerenciar Posts</a>
+        
+            <?php endif; ?>
+            
         </nav>
     </header>
 
     <main> 
-        <div style="text-align: center;" class="form-floating"> 
-            <input class="form-control" placeholder=""> 
-            <label>Pesquisar Post</label> 
-        </div>
+
+        <form action="index.php" method="GET" class="search-container">
+            <input type="text" name="busca" placeholder="Pesquisar posts..." value="<?php echo $_GET['busca'] ?? ''; ?>">
+            <button type="submit">Buscar</button>
+        </form>
+
         <section>
             <h1 style="text-align: center;">Posts</h1>
         <?php

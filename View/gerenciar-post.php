@@ -15,6 +15,7 @@ $rs_posts = $conn->query($sql_dados_posts);
 
 <head>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+    <title>Gerenciar Posts</title>
 </head>
 
 <body>
