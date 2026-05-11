@@ -35,7 +35,7 @@ $img = $uma_contratacao['img'];
     <header>
 
         <div>
-            <img style="width: 200px;" src="img/gremio logo.svg">
+            <img style="width: 200px;" src="/img/gremio logo.svg">
         </div>
                    
         <nav>

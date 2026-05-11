@@ -25,7 +25,7 @@ try {
         $_SESSION['usuario_email'] = $usuario['email'];
         $_SESSION['usuario_role'] = $usuario['role'];
         echo "<script>
-            alert('Bem vindo!');
+            alert('Bem vindo ao Blog do Grêmio!');
             window.location.href = '../index.php'; // Redireciona após o OK
           </script>";
         // Aqui você pode redirecionar: header("Location: painel.php");

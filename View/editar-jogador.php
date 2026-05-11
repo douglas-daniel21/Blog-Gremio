@@ -33,7 +33,7 @@ $img = $um_jogador['img'];
     <header>
         
         <div>
-            <img style="width: 200px;" src="img/gremio logo.svg">
+            <img style="width: 200px;" src="/img/gremio logo.svg">
         </div>
 
         <nav>

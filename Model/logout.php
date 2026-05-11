@@ -18,6 +18,11 @@ if (ini_get("session.use_cookies")) {
 // 4. Destrói a sessão no servidor
 session_destroy();
 
+echo "<script>
+alert('Você saiu da sua conta!');
+window.location.href = '../index.php'; // Redireciona após o OK
+</script>";
+
 // 5. Redireciona o usuário para a página de login ou home
 header("Location: /index.php");
 exit;

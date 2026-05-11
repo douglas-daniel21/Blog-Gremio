@@ -34,7 +34,7 @@ $img = $um_post['img'];
     <header>
 
         <div>
-            <img style="width: 200px;" src="img/gremio logo.svg">
+            <img style="width: 200px;" src="/img/gremio logo.svg">
         </div>
         <nav>
             <a href="/index.php">Home</a>

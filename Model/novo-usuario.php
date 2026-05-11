@@ -20,6 +20,10 @@ try{
 
     if($stmt->execute()){
         $id = $conn->lastInsertId();
+        echo "<script>
+        alert('Conta criada com sucesso, Bem vindo!');
+        window.location.href = '../index.php'; // Redireciona após o OK
+      </script>";
     }
         
 }catch(PDOException $e){
