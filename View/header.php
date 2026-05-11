@@ -1,3 +1,10 @@
+<?php
+// Simulando a lógica de verificação
+session_start();
+$logado = isset($_SESSION['usuario_email']);
+$role = $logado ? $_SESSION['usuario_role'] : null;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +23,9 @@
 <body>
     <header class="border-bottom lh-1 py-3">
         <div class="row">
-            <div class="col-4 pt-1">
-                <a class="link-secondary" href="#">
-                    <img width="220px" src="../img/gremio logo.svg">Inscrever-se
-                </a> 
+        
+            <div class="col-4 pt-1">           
+                <img width="220px" src="../img/gremio logo.svg">
             </div>
     
             <div  class="col-4 text-center"> 
@@ -44,17 +50,23 @@
                 -->
 
                 <div style="padding: 10px;">
-                <a style="font-family: arial; padding-left: 25px; padding-right: 30px; padding-top: 8px; padding-bottom: 8px;" 
-                class="btn btn-sm btn-outline-primary" href="/View/login.html">
-                    <img style="width: 20px;" src="../img/user.png">
-                    Entrar
-                </a>
+
+                <?php if (!$logado): ?>
+                <a href="/View/login.html" class="btn-login" style="border-radius: 10px; color: white; display: inline-block;padding: 10px 25px;background-color: #007bff;">
+                    Entrar</a>
+
+                <?php elseif ($role === 'adm'): ?>
+                <div class="btn-auth admin">Bem-vindo, Administrador!</div>
+                <a href="/../Model/logout.php">Sair</a>
+
+                <?php else: ?>
+                <div class="btn-auth user">Bem-vindo, Usuário!</div>
+                <a href="/../Model/logout.php">Sair</a>
+
+                <?php endif; ?>             
                 </div>
 
             </div>
-
-            
-
         </div>
     </header>
     <div>

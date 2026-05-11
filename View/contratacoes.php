@@ -1,6 +1,12 @@
 <?php
 require  __DIR__."/../Model/model-contratacoes.php";
 ?>
+<?php
+// Simulando a lógica de verificação
+session_start();
+$logado = isset($_SESSION['usuario_email']);
+$role = $logado ? $_SESSION['usuario_role'] : null;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,22 +28,11 @@ require  __DIR__."/../Model/model-contratacoes.php";
         <nav>
             <a href="../index.php">Voltar para home</a>
 
-
-            <?php 
-                // 1. Iniciamos a sessão (obrigatório em toda página que usa $_SESSION)
-                if (session_status() === PHP_SESSION_NONE) {
-                    session_start();
-                }
-
-                // 2. Verificamos se 'user_role' EXISTE e se é 'adm'
-                // Mudei para 'adm' porque é o que está no seu banco de dados
-                if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'adm'): ?>
-
-                <a href="contratacoes.php">Contratações</a>
-                <a href="nova-contratacao.html">Novo Contratação</a>
-                <a href="gerenciar-contratacao.php">Gerenciar Contratações</a>
-        
-            <?php endif; ?>
+            <?php if ($role === 'adm'): ?>
+                <a href="/View/contratacoes.php">Contratações</a>
+                <a href="/View/nova-contratacao.html">Novo Contratação</a>
+                <a href="/View/gerenciar-contratacao.php">Gerenciar Contratações</a>
+            <?php endif; ?> 
 
         </nav>   
    

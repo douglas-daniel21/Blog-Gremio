@@ -1,6 +1,12 @@
 <?php
 require  __DIR__."/../Model/model-jogador.php";
 ?>
+<?php
+// Simulando a lógica de verificação
+session_start();
+$logado = isset($_SESSION['usuario_email']);
+$role = $logado ? $_SESSION['usuario_role'] : null;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,21 +29,11 @@ require  __DIR__."/../Model/model-jogador.php";
             <a href="/index.php">Voltar para home</a>
             
 
-            <?php 
-                // 1. Iniciamos a sessão (obrigatório em toda página que usa $_SESSION)
-                if (session_status() === PHP_SESSION_NONE) {
-                    session_start();
-                }
-
-                // 2. Verificamos se 'user_role' EXISTE e se é 'adm'
-                // Mudei para 'adm' porque é o que está no seu banco de dados
-                if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'adm'): ?>
-                
-                <a href="/View/jogador.php">Jogadores</a>
-                <a href="/View/novo-jogador.html">Novo Jogador</a>
-                <a href="/View/gerenciar-jogador.php">Deletar Jogador</a>
-        
-            <?php endif; ?>       
+            <?php if ($role === 'adm'): ?>
+                <a href="jogador.php">Jogadores</a>
+                <a href="novo-jogador.html">Novo Jogador</a>
+                <a href="gerenciar-jogador.php">Gerenciar Jogador</a>
+            <?php endif; ?>      
         </nav>
     </header>
 

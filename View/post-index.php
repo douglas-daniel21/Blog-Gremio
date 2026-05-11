@@ -36,7 +36,7 @@ require  __DIR__."/../Model/model-post.php";
                         <div class='mb-1 text-body-secondary'>$posts_data</div>
                         <p class='card-text mb-auto'>$posts_resumo</p> 
                         <a style='color: blue; font-family: Arial, Helvetica, sans-serif;'  
-                        href='pagina-post.php?id=$id'>Ler mais</a>
+                        href='/View/pagina-post.php?id=$id'>Ler mais</a>
                     </div>
                     <div class='col-auto d-none d-lg-block'> 
                         <img style='width: 180px;' src='../img/icones/$posts_img.svg'>    

@@ -20,7 +20,6 @@ $data = $um_post['data'];
 $autor = $um_post['autor'];
 $img = $um_post['img'];
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +29,6 @@ $img = $um_post['img'];
     <title>Pagina Post</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -39,7 +37,6 @@ $img = $um_post['img'];
         <img style="width: 20%;" src="../img/gremio logo.svg">
         <img style="width: 80%;" src="../gif/gif-2000x380.gif">
     </header>
-
 
     <main class="container" style="text-align: center; border: 1px solid gray">
         <article class="container">
@@ -50,7 +47,7 @@ $img = $um_post['img'];
                 <small style="color: gray;">por <span style="color: skyblue"><?=$autor?></span> - <?=$data?> 15:34 </small>
 
                 <figure>    
-                <img style="width: 40%;" class="figure-img img-fluid" src="img/icones/<?=$img?>.svg">
+                <img style="width: 40%;" class="figure-img img-fluid" src="/img/icones/<?=$img?>.svg">
                 </figure>
 
                 <figcaption style="padding: 10px">Jogo Gremio</figcaption>
@@ -66,33 +63,27 @@ $img = $um_post['img'];
                 </p>      
         </article>
 
-    </main>
-
-
-        
-
-       
+    </main>   
     <footer style="text-align: center; padding: 20px">
-        <button  style="background-color: white; padding: 5px; border 1px solid gray;" href="">
+        <button  style="background-color: white; padding: 5px; border: 1px solid gray;" href="">
              <img style="width: 40px;" src="../img/icones/icone-zap.jpg"> 
         </button>
 
-        <button style="background-color: white; padding: 5px; border 1px solid gray;" href="">
+        <button style="background-color: white; padding: 5px; border: 1px solid gray;" href="">
              <img style="width: 40px;" src="../img/icones/icone-instagram.jpg">
         </button>
 
-        <button style="background-color: white; padding: 5px; border 1px solid gray;" href="">
+        <button style="background-color: white; padding: 5px; border: 1px solid gray;" href="">
              <img style="width: 40px;" src="../img/icones/icone-compartilhar.jpg">
         </button>
     </footer>
     <hr>
-
     <div class="container">
+    
     <?php
-    require ("require/post.php");
+    require("post-index.php");
     ?>
+
     </div>
-
 </body>
-
 </html>

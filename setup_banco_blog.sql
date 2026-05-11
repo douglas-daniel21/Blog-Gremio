@@ -21,6 +21,38 @@ values('Grêmio x Bragantino',
         '09/02/26',
         'campo');
 
+insert into posts (titulo, resumo, texto, autor, data, img)
+values('Grêmio 0 x 1 Flamengo',
+        'Gremio perde para Flamengo na Arena por 1x0',
+        'Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio v', 
+        'Douglas',
+        '10/05/26',
+        'campo');
+
+insert into posts (titulo, resumo, texto, autor, data, img)
+values('Destino de Gabriel Mec',
+        'Gabriel Mec a jóia do Grêmio está sendo sondado por times europeus',
+        'Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio v', 
+        'Douglas',
+        '02/05/26',
+        'contratacao');
+
+insert into posts (titulo, resumo, texto, autor, data, img)
+values('Tetê em pessima fase...',
+        'O jogador Tetê está em pessima fase des de quando chegou ao Grêmio',
+        'Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio v', 
+        'Douglas',
+        '20/04/26',
+        'jogador');
+
+insert into posts (titulo, resumo, texto, autor, data, img)
+values('Gabriel Mec melhor da partida',
+        'Gabriel Mec recebe o prêmio de melho da partida no confronto entre Grêmio x Coritiba',
+        'Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio v', 
+        'Douglas',
+        '25/04/26',
+        'estrela');
+
 drop table trofeus;
 create table trofeus(
     trofeuId integer not null primary key,
@@ -78,5 +110,6 @@ create table administradores(
     role TEXT NOT NULL DEFAULT 'adm'
 );
 
-INSERT INTO administradores (email, senha) 
-VALUES ('douglas@gmail.com', SHA2('Gremista21', 256));
+INSERT INTO usuarios (email, senha,role) 
+VALUES ('douglas@gmail.com', '$2y$10$rkjKDBGM0.3btlf.b7tTeul2X0OaU5QifnyFCPzFYFS/Mo9LMKkdq','adm');
+-- senha adm: douglas

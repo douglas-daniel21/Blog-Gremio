@@ -1,6 +1,12 @@
 <?php
 require  __DIR__."/../Model/model-post.php";
 ?>
+<?php
+// Simulando a lógica de verificação
+session_start();
+$logado = isset($_SESSION['usuario_email']);
+$role = $logado ? $_SESSION['usuario_role'] : null;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,31 +21,19 @@ require  __DIR__."/../Model/model-post.php";
 <body>
     <header>
     <div>
-            <img style="width: 200px;" src="img/gremio logo.svg">
+            <img style="width: 200px;" src="../img/gremio logo.svg">
         </div>
         <nav>
             <a href="../index.php">Voltar para home</a>
-            
 
-            <?php 
-                // 1. Iniciamos a sessão (obrigatório em toda página que usa $_SESSION)
-                if (session_status() === PHP_SESSION_NONE) {
-                    session_start();
-                }
-
-                // 2. Verificamos se 'user_role' EXISTE e se é 'adm'
-                // Mudei para 'adm' porque é o que está no seu banco de dados
-                if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'adm'): ?>
-                
-                <a href="posts.php">Posts</a>
-                <a href="novo-post.html">Novo Post</a>
-                <a href="gerenciar-post.php">Gerenciar Posts</a>
-        
-            <?php endif; ?>
+            <?php if ($role === 'adm'): ?>
+                <a href="/View/posts.php">Posts</a>
+                <a href="/View/novo-post.html">Novo Post</a>
+                <a href="/View/gerenciar-post.php">Gerenciar Posts</a>
+            <?php endif; ?> 
             
         </nav>
     </header>
-
     <main> 
 
         <form action="index.php" method="GET" class="search-container">
@@ -82,9 +76,7 @@ require  __DIR__."/../Model/model-post.php";
             echo $template_de_post;
         };
         ?>
-            
-        </section>
-        
+        </section>       
     </main>
 </body>
 </html>
