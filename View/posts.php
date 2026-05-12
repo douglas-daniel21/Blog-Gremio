@@ -1,6 +1,4 @@
-<?php
-require  __DIR__."/../Model/model-post.php";
-?>
+
 <?php
 // Simulando a lógica de verificação
 session_start();
@@ -36,10 +34,13 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
     </header>
     <main> 
 
-        <form style="padding: 10px;" action="/../Model/model-post.php" method="GET">
+        <form style="padding: 10px;" action="/View/posts.php" method="GET">
         <input type="text" name="busca" placeholder="Pesquisar posts..." value="<?php echo isset($_GET['busca']) ? $_GET['busca'] : ''; ?>">
         <button style="border-radius: 7px;" type="submit" class="btn-buscar">Buscar</button>
         </form>
+        <?php
+        require  __DIR__."/../Model/model-post.php";
+        ?>
 
         <section>
             <h1 style="text-align: center;">Posts</h1>

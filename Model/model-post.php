@@ -1,8 +1,8 @@
 <?php
 require(__DIR__."/../conectar_com_banco.php");
-$busca = 'Gabriel';
+$busca = $_GET['busca'] ?? null;
 
-if ($busca = null){
+if ($busca == null){
     $sql_dados_posts = "
     SELECT postId, titulo, resumo, texto, data, autor, img
     FROM posts

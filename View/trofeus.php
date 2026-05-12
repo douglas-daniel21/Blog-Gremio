@@ -1,6 +1,4 @@
-<?php
-require  __DIR__."/../Model/model-trofeu.php";
-?>
+
 <?php
 // Simulando a lógica de verificação
 session_start();
@@ -36,6 +34,16 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
         </nav>
     </header>
     <main style="text-align: center;">
+
+        <form style="padding: 10px;" action="/View/trofeus.php" method="GET">
+        <input type="text" name="busca" placeholder="Pesquisar posts..." value="<?php echo isset($_GET['busca']) ? $_GET['busca'] : ''; ?>">
+        <button style="border-radius: 7px;" type="submit" class="btn-buscar">Buscar</button>
+        </form>
+
+        <?php
+        require  __DIR__."/../Model/model-trofeu.php";
+        ?>
+
         <h1 style="text-align: center;">Troféus</h1>
                 
                 <?php

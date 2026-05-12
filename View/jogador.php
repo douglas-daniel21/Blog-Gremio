@@ -1,7 +1,4 @@
 <?php
-require  __DIR__."/../Model/model-jogador.php";
-?>
-<?php
 // Simulando a lógica de verificação
 session_start();
 $logado = isset($_SESSION['usuario_email']);
@@ -38,6 +35,16 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
     </header>
 
     <main class="container">
+
+        <form style="padding: 10px;" action="/View/jogador.php" method="GET">
+            <input type="text" name="busca" placeholder="Pesquisar contratações..." value="<?php echo isset($_GET['busca']) ? $_GET['busca'] : ''; ?>">
+            <button style="border-radius: 7px;" type="submit" class="btn-buscar">Buscar</button>
+        </form>
+
+        <?php
+        require  __DIR__."/../Model/model-jogador.php";
+        ?>
+
         <h1 style="text-align: center;">Jogadores</h1>
 
     <?php

@@ -9,7 +9,7 @@ try {
     FROM usuarios
     WHERE email = email";
     $stmt = $conn->prepare($sql);
-    $stmt_>bindValue(':email', $email);
+    $stmt->bindValue(':email', $email);
     $stmt->execute();
 
     $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -24,7 +24,7 @@ try {
     }  else {
         echo "Email ou senha incorretos.";
     }
-} catch(PDPException $e) {
+} catch(PDOException $e) {
     echo "ERRO ao conectar: ". $e->getMessage();
 }
 ?>
