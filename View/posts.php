@@ -36,9 +36,9 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
     </header>
     <main> 
 
-        <form action="index.php" method="GET" class="search-container">
-            <input type="text" name="busca" placeholder="Pesquisar posts..." value="<?php echo $_GET['busca'] ?? ''; ?>">
-            <button type="submit">Buscar</button>
+        <form style="padding: 10px;" action="/../Model/model-post.php" method="GET">
+        <input type="text" name="busca" placeholder="Pesquisar posts..." value="<?php echo isset($_GET['busca']) ? $_GET['busca'] : ''; ?>">
+        <button style="border-radius: 7px;" type="submit" class="btn-buscar">Buscar</button>
         </form>
 
         <section>

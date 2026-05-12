@@ -30,7 +30,7 @@
     </div>
     <hr>
         <?php
-        require("View/card-socio.html");
+        require("View/card-vantagens.html");
         ?>
 
         <hr>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container-cards">
+            <div class="card-gremio">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <img src="/img/Gremio_logo2.svg" alt="Escudo Grêmio" class="escudo">
+                    <h2>O Imortal precisa de você!</h2>
+                    <p>Jogue junto com o Grêmio. Seja sócio, garanta seu lugar na Arena e ajude o Tricolor a ser cada vez mais forte.</p>
+                    <a href="https://socio.gremio.net/" target="_blank" class="btn-socio">QUERO SER SÓCIO</a>
+                </div>
+            </div>
+            
+            <style>
+                .card-gremio {
+                    position: relative;
+                    width: 100%;
+                    max-width: 650px;
+                    height: 500px;
+                    background: url('/img/torcida-gremio.webp') no-repeat center; /* Substitua por uma foto da Arena */
+                    background-size: cover;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: flex-end;
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 20px auto;
+                }
+            
+                .card-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(0deg, rgba(0,71,133,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+                    z-index: 1;
+                }
+            
+                .card-content {
+                    position: relative;
+                    z-index: 2;
+                    padding: 30px;
+                    text-align: center;
+                    color: white;
+                    width: 100%;
+                }
+            
+                .escudo {
+                    width: 70px;
+                    margin-bottom: 15px;
+                    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.5));
+                }
+            
+                .card-content h2 {
+                    font-size: 24px;
+                    font-weight: 800;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            
+                .card-content p {
+                    font-size: 16px;
+                    line-height: 1.4;
+                    margin-bottom: 25px;
+                    opacity: 0.9;
+                }
+            
+                .btn-socio {
+                    display: inline-block;
+                    padding: 12px 30px;
+                    background-color: #00ADEF; /* Azul Celeste */
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: bold;
+                    border-radius: 50px;
+                    transition: all 0.3s ease;
+                    border: 2px solid transparent;
+                    box-shadow: 0 4px 15px rgba(0, 173, 239, 0.4);
+                }
+            
+                .btn-socio:hover {
+                    background-color: #fff;
+                    color: #004785; /* Azul Escuro */
+                    transform: translateY(-3px);
+                    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+                }
+            </style>
+        
+            <div class="card-vantagens">
+                <div class="header-vantagens">
+                    <h3>Vantagens exclusivas de ser sócio</h3>
+                </div>
+                <ul class="lista-vantagens">
+                    <li><span>✓</span> Ingressos com até 100% de desconto</li>
+                    <li><span>✓</span> Prioridade máxima na compra (Check-in)</li>
+                    <li><span>✓</span> Descontos na GrêmioMania (Física e Online)</li>
+                    <li><span>✓</span> Direito a voto nas eleições do clube</li>
+                    <li><span>✓</span> Rede de convênios "Sócio de Carteirinha"</li>
+                </ul>
+                <p class="obs">*Consulte as regras de cada modalidade.</p>
+            </div>
+        </div>
+        
+        <style>
+            /* Container para colocar um ao lado do outro */
+            .container-cards {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                flex-wrap: wrap; /* Faz quebrar linha no celular */
+                padding: 20px;
+                font-family: 'Segoe UI', sans-serif;
+                width: 80%;
+            }
+        
+            /* Ajuste do Card 1 para caber ao lado */
+            .card-menor {
+                flex: 1;
+                max-width: 300px;
+                height: 350px !important;
+            }
+        
+            /* Estilo do Card de Vantagens */
+            .card-vantagens {
+                flex: 1;
+                max-width: 300px;
+                background: #fff;
+                border-radius: 15px;
+                border: 2px solid #004785;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+        
+            .header-vantagens {
+                background: #004785;
+                color: white;
+                padding: 15px;
+                text-align: center;
+            }
+        
+            .header-vantagens h3 {
+                margin: 0;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+        
+            .lista-vantagens {
+                list-style: none;
+                padding: 20px;
+                margin: 0;
+                flex-grow: 1;
+            }
+        
+            .lista-vantagens li {
+                margin-bottom: 12px;
+                font-size: 14px;
+                color: #333;
+                display: flex;
+                align-items: center;
+                line-height: 1.2;
+            }
+        
+            .lista-vantagens li span {
+                color: #00ADEF;
+                font-weight: bold;
+                margin-right: 10px;
+                font-size: 18px;
+            }
+        
+            .obs {
+                font-size: 10px;
+                color: #999;
+                text-align: center;
+                padding-bottom: 15px;
+            }
+        </style>
+    </main>
+</body>
+</html>
