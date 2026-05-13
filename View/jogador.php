@@ -36,9 +36,9 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
 
     <main class="container">
 
-        <form style="padding: 10px;" action="/View/jogador.php" method="GET">
+        <form style="padding: 10px;text-align: center;" action="/View/jogador.php" method="GET">
             <input type="text" name="busca" placeholder="Pesquisar contratações..." value="<?php echo isset($_GET['busca']) ? $_GET['busca'] : ''; ?>">
-            <button style="border-radius: 7px;" type="submit" class="btn-buscar">Buscar</button>
+            <button style="border-radius: 7px;" type="submit" class="btn-buscar">Pesquisar</button>
         </form>
 
         <?php
@@ -47,7 +47,7 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
 
         <h1 style="text-align: center;">Jogadores</h1>
 
-    <?php
+        <?php
         // Lemos todas as linhas (uma por vez) do result set
         while ($dados_jogadores = $rs_jogadores->fetch(PDO::FETCH_ASSOC)) {
 
@@ -84,8 +84,7 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
             echo $template_jogador;
         };
 
-        ?>
-        
+        ?>     
     </main>
     
 </body>

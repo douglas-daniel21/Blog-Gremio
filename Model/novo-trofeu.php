@@ -1,12 +1,12 @@
 <?php
 $nome = $_POST['trofeu_nome'];
 $quantidade = $_POST['trofeu_quantidade'];
-$ultimo = $_POST['trofeu_ultimo'];
+$ano = $_POST['trofeu_ano'];
 $img = $_POST['trofeu_img'];
 
 $sql = "
-INSERT INTO trofeus (nome, quantidade, ultimo, img)
-VALUES (:nome, :quantidade, :ultimo, :img);
+INSERT INTO trofeus (nome, quantidade, ano, img)
+VALUES (:nome, :quantidade, :ano, :img);
 ";
 
 require(__DIR__."/../conectar_com_banco.php");
@@ -15,7 +15,7 @@ $stmt = $conn->prepare($sql);
 
 $stmt->bindValue(':nome', $nome);
 $stmt->bindValue(':quantidade', $quantidade);
-$stmt->bindValue(':ultimo', $ultimo);
+$stmt->bindValue(':ano', $ano);
 $stmt->bindValue(':img', $img);
 
 $stmt->execute();

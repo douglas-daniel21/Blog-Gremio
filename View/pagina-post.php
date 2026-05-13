@@ -34,28 +34,29 @@ $img = $um_post['img'];
 <body>
 
     <header style="text-align: center; padding: 20px;">
-        <img style="width: 20%;" src="../img/gremio logo.svg">
-        <img style="width: 80%;" src="../gif/gif-2000x380.gif">
+
+        <div>
+            <img style="width: 10%;" src="../img/gremio logo.svg">
+        </div>
+
+        <div>
+            <img style="width: 50%;" src="../gif/gif-2000x380.gif">
+        </div>
+        
     </header>
 
     <main class="container" style="text-align: center; border: 1px solid gray">
         <article class="container">
-                <h1>
+                <h1 style="padding-bottom: 20px; padding-top: 20px;">
                 <?=$titulo?>
                 </h1>
                 <h5><?=$resumo?></h5>
                 <small style="color: gray;">por <span style="color: skyblue"><?=$autor?></span> - <?=$data?> 15:34 </small>
 
                 <figure>    
-                <img style="width: 40%;" class="figure-img img-fluid" src="/img/icones/<?=$img?>.svg">
+                <img style="width: 20%;" class="figure-img img-fluid" src="/img/icones/<?=$img?>.svg">
                 </figure>
 
-                <figcaption style="padding: 10px">Jogo Gremio</figcaption>
-                <a href="https://www.youtube.com/watch?v=V1mm6ry2Jk0" 
-                target="_blank" style="text-decoration: none; padding: 10px 20px; background-color: #007bff; color:
-                white; border-radius: 5px; display: inline-block;">
-                Assistir resumo da partida
-                </a>
                 <hr>
 
                 <p class="container" style="padding: 20px; width: 80%; text-align: justify;">
@@ -83,7 +84,13 @@ $img = $um_post['img'];
     <?php
     require("post-index.php");
     ?>
+    
+    <hr>
 
     </div>
+
+    <?php 
+    require("footer.html");
+    ?>
 </body>
 </html>

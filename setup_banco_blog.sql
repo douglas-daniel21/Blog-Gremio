@@ -58,11 +58,11 @@ create table trofeus(
     trofeuId integer not null primary key,
     nome text,
     quantidade integer,
-    ultimo integer,
+    ano integer,
     img text
 );
 
-insert into trofeus (nome, quantidade, ultimo, img)
+insert into trofeus (nome, quantidade, ano, img)
 values('Libertadores', 3, 2017, 'libertadores');
 
 drop table jogadores;

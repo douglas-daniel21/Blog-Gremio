@@ -35,9 +35,9 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
     </header>
     <main style="text-align: center;">
 
-        <form style="padding: 10px;" action="/View/trofeus.php" method="GET">
+        <form style="padding: 10px;text-align: center;" action="/View/trofeus.php" method="GET">
         <input type="text" name="busca" placeholder="Pesquisar posts..." value="<?php echo isset($_GET['busca']) ? $_GET['busca'] : ''; ?>">
-        <button style="border-radius: 7px;" type="submit" class="btn-buscar">Buscar</button>
+        <button style="border-radius: 7px;" type="submit" class="btn-buscar">Pesquisar</button>
         </form>
 
         <?php
@@ -46,36 +46,33 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
 
         <h1 style="text-align: center;">Troféus</h1>
                 
-                <?php
-
-                while ($dados_trofeus = $rs_trofeus->fetch(PDO::FETCH_ASSOC)) {
-
-                    $trofeu_nome = $dados_trofeus["nome"];
-                    $trofeu_quantidade = $dados_trofeus["quantidade"];
-                    $trofeu_ultimo = $dados_trofeus["ultimo"];
-                    $trofeu_img = $dados_trofeus["img"];
-
-                    $template_de_trofeu = "
-                        <div  style='text-align: center;' class='container'>
-                            <div style='width: 100%; height: 550; alight-items: center;' class='card mb-4 rounded-3 shadow-sm'>
-                                <div class='card-header py-3'>
-                                <img src='../img/taças/$trofeu_img.jpg'> 
-                                </div>
-                                <div id='card-body' class='card-body'>
-                                    <h1 style='' class='card-title pricing-card-title'>$trofeu_nome
-                                        <small class='text-body-secondary fw-light'></small>
-                                    </h1>
-                                    <ul class='list-unstyled mt-3 mb-4'>
-                                        <h4 style='color: gray;'>Quantidade: $trofeu_quantidade</h4>
-                                        <h4 style='color: gray;'>Ultima vez conquistado: $trofeu_ultimo</h4>
-                                    </ul> 
-                                </div>
-                            </div>
+        <?php
+        while ($dados_trofeus = $rs_trofeus->fetch(PDO::FETCH_ASSOC)) {
+            $trofeu_nome = $dados_trofeus["nome"];
+            $trofeu_quantidade = $dados_trofeus["quantidade"];
+            $trofeu_ano = $dados_trofeus["ano"];
+            $trofeu_img = $dados_trofeus["img"];
+            $template_de_trofeu = "
+                <div  style='text-align: center;' class='container'>
+                    <div style='width: 100%; height: 550; alight-items: center;' class='card mb-4 rounded-3 shadow-sm'>
+                        <div class='card-header py-3'>
+                        <img src='../img/taças/$trofeu_img.jpg'> 
                         </div>
-                    ";
-                    echo $template_de_trofeu;
-                };  
-            ?>
+                        <div id='card-body' class='card-body'>
+                            <h1 style='' class='card-title pricing-card-title'>$trofeu_nome
+                                <small class='text-body-secondary fw-light'></small>
+                            </h1>
+                            <ul class='list-unstyled mt-3 mb-4'>
+                                <h4 style='color: gray;'>Quantidade: $trofeu_quantidade</h4>
+                                <h4 style='color: gray;'>Ultima vez conquistado: $trofeu_ano</h4>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+            ";
+            echo $template_de_trofeu;
+        };  
+        ?>
     </main>
 </body>
 </html>

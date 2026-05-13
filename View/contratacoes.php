@@ -19,7 +19,7 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
     
     <header>
         <div>
-            <img style="width: 200px;" src="img/gremio logo.svg">
+            <img style="width: 200px;" src="/img/gremio logo.svg">
         </div>
         
         <nav>
@@ -37,15 +37,14 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
 
     <main class="container">
 
-        <form style="padding: 10px;" action="/View/contratacoes.php" method="GET">
+        <form style="padding: 10px;text-align: center;" action="/View/contratacoes.php" method="GET">
             <input type="text" name="busca" placeholder="Pesquisar contratações..." value="<?php echo isset($_GET['busca']) ? $_GET['busca'] : ''; ?>">
-            <button style="border-radius: 7px;" type="submit" class="btn-buscar">Buscar</button>
+            <button style="border-radius: 7px;" type="submit" class="btn-buscar">Pesquisar</button>
         </form>
 
         <?php
         require  __DIR__."/../Model/model-contratacoes.php";
         ?>
-
 
     <h1 style="text-align: center;">Contratações</h1>
 
@@ -64,7 +63,7 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
             <div  style='text-align: center;'  class='container'>
                 <div style='width: 100%; height: 550;' class='card mb-4 rounded-3 shadow-sm'>
                     <div class='card-header py-3'>
-                    <img src='img/contratacoes/$contratacao_img.jpg'> 
+                    <img src='/img/contratacoes/$contratacao_img.jpg'> 
                     </div>
                     <div id='card-body' class='card-body'>
                         <h1 class='card-title pricing-card-title'> $contratacao_nome
@@ -83,8 +82,7 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
 
             echo $template_contratacao;
         }
-        ?>
-        
+        ?>       
     </main>
 </body>
 </html>

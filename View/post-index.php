@@ -26,7 +26,6 @@ require  __DIR__."/../Model/model-post.php";
             $posts_img = $dados_posts["img"];
             $id = $dados_posts['postId'];
 
-
             $template_de_post = "
             <div style='padding-left: 50px' class='col-md-12'>
                 <div class='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'>

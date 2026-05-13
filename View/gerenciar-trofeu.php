@@ -2,7 +2,7 @@
 
 require(__DIR__."/../conectar_com_banco.php");
 $sql_dados_trofeus = "
-SELECT trofeuId, nome, ultimo, quantidade
+SELECT trofeuId, nome, ano, quantidade
 FROM trofeus
 ORDER BY trofeuId DESC;
 ";
@@ -37,7 +37,7 @@ $rs_trofeus = $conn->query($sql_dados_trofeus);
         <thead>
             <th style='text-align: center;'>Nome</th>
             <th style='text-align: center;'>Quantidade</th>
-            <th style='text-align: center;'>Ultimo</th>
+            <th style='text-align: center;'>Ano</th>
             <th style='text-align: center;'>Comando</th>
         </thead>
 
@@ -47,14 +47,14 @@ $rs_trofeus = $conn->query($sql_dados_trofeus);
             while($um_trofeu = $rs_trofeus->fetch(PDO::FETCH_ASSOC)) {
                 $nome = $um_trofeu['nome'];
                 $quantidade = $um_trofeu['quantidade'];
-                $ultimo = $um_trofeu['ultimo'];
+                $ano = $um_trofeu['ano'];
                 $id = $um_trofeu['trofeuId'];
 
                 $linha_com_trofeu = "
                 <tr>
                     <td <td style='text-align: center;'>$nome</td>
                     <td <td style='text-align: center;'>$quantidade</td>
-                    <td <td style='text-align: center;'>$ultimo</td>
+                    <td <td style='text-align: center;'>$ano</td>
                     <td style='text-align: center;'>
                         <a style='color: black; background-color: red; border-radius: 8px; padding: 8px; font-family: Arial, Helvetica, sans-serif;'  
                         href='../Controller/ctrl-apagar-trofeu.php?id=$id'>Deletar</a>

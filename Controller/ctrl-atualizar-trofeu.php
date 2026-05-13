@@ -1,7 +1,7 @@
 <?php
 $nome = $_POST['trofeu_nome'];
 $quantidade = $_POST['trofeu_quantidade'];
-$ultimo = $_POST['trofeu_ultimo'];
+$ano = $_POST['trofeu_ano'];
 $img = $_POST['trofeu_img'];
 $id = $_POST['trofeu_id'];
 
@@ -11,18 +11,16 @@ $sql = "
 UPDATE trofeus
 SET nome = :nome,
     quantidade = :quantidade,
-    ultimo = :ultimo,
+    ano = :ano,
     img = :img
 WHERE trofeuId = :id_trofeu;
 ";
-
-
 
 $stmt = $conn->prepare($sql);
 
 $stmt->bindValue(':nome', $nome);
 $stmt->bindValue(':quantidade', $quantidade);
-$stmt->bindValue(':ultimo', $ultimo);
+$stmt->bindValue(':ano', $ano);
 $stmt->bindValue(':img', $img);
 $stmt->bindValue(':id_trofeu', $id);
 

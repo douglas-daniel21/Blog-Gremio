@@ -18,7 +18,7 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
 </head>
 <body>
     <header>
-    <div>
+        <div>
             <img style="width: 200px;" src="../img/gremio logo.svg">
         </div>
         <nav>
@@ -34,9 +34,9 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
     </header>
     <main> 
 
-        <form style="padding: 10px;" action="/View/posts.php" method="GET">
+        <form style="padding: 10px;text-align: center;" action="/View/posts.php" method="GET">
         <input type="text" name="busca" placeholder="Pesquisar posts..." value="<?php echo isset($_GET['busca']) ? $_GET['busca'] : ''; ?>">
-        <button style="border-radius: 7px;" type="submit" class="btn-buscar">Buscar</button>
+        <button style="border-radius: 7px;" type="submit" class="btn-buscar">Pesquisar</button>
         </form>
         <?php
         require  __DIR__."/../Model/model-post.php";
@@ -54,6 +54,8 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
             $posts_autor = $dados_posts["autor"];
             $posts_data = $dados_posts["data"];
             $posts_img = $dados_posts["img"];
+            $id = $dados_posts['postId'];
+
 
             $template_de_post = "
             <div class='col-md-12'>
@@ -63,9 +65,8 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
                         <h3 class='mb-0'>$posts_titulo</h3>
                         <div class='mb-1 text-body-secondary'>$posts_data</div>
                         <p class='card-text mb-auto'>$posts_resumo</p> 
-                        <a href='#' class='icon-link gap-1 icon-link-hover stretched-link'>
-                        Ler mais
-                        </a>
+                        <a style='color: blue; font-family: Arial, Helvetica, sans-serif;'  
+                        href='/View/pagina-post.php?id=$id'>Ler mais</a>
                     </div>
                     <div class='col-auto d-none d-lg-block'> 
                         <img style='width: 180px;' src='../Img/icones/$posts_img.svg'>    

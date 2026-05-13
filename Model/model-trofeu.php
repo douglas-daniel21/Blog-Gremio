@@ -4,13 +4,13 @@ $busca = $_GET['busca'] ?? null;
 
 if ($busca == null){
     $sql_dados_trofeus = "
-    SELECT nome, quantidade, ultimo, img
+    SELECT nome, quantidade, ano, img
     FROM trofeus
     ORDER BY trofeuId DESC;
     ";
 }else{
     $sql_dados_trofeus = "
-    SELECT nome, quantidade, ultimo, img
+    SELECT nome, quantidade, ano, img
     FROM trofeus
     WHERE nome LIKE '%$busca%'
     ORDER BY trofeuId DESC;

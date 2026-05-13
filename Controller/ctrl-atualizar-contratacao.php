@@ -10,7 +10,6 @@ $id = $_POST['contratacao_id'];
 
 require(__DIR__."/../conectar_com_banco.php");
 
-
 $sql = "
 UPDATE contratacoes
 SET nome = :nome,
@@ -23,8 +22,6 @@ SET nome = :nome,
     img = :img
 WHERE contratacaoId = :id_contratacao;
 ";
-
-
 
 $stmt = $conn->prepare($sql);
 
