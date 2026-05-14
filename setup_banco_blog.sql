@@ -46,6 +46,46 @@ values('Tetê em pessima fase...',
         'jogador');
 
 insert into posts (titulo, resumo, texto, autor, data, img)
+values('Grêmio x Bragantino',
+        'Gremio empata com Bragantino em 1x1',
+        'Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio v', 
+        'Douglas',
+        '09/02/26',
+        'lista');
+
+insert into posts (titulo, resumo, texto, autor, data, img)
+values('Grêmio 0 x 1 Flamengo',
+        'Gremio perde para Flamengo na Arena por 1x0',
+        'Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio v', 
+        'Douglas',
+        '10/05/26',
+        'penalti');
+
+insert into posts (titulo, resumo, texto, autor, data, img)
+values('Destino de Gabriel Mec',
+        'Gabriel Mec a jóia do Grêmio está sendo sondado por times europeus',
+        'Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio v', 
+        'Douglas',
+        '02/05/26',
+        'contratacao');
+
+insert into posts (titulo, resumo, texto, autor, data, img)
+values('Grêmio 0 x 1 Flamengo',
+        'Gremio perde para Flamengo na Arena por 1x0',
+        'Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio v', 
+        'Douglas',
+        '10/05/26',
+        'taça');
+
+insert into posts (titulo, resumo, texto, autor, data, img)
+values('Grêmio 0 x 1 Flamengo',
+        'Gremio perde para Flamengo na Arena por 1x0',
+        'Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio v', 
+        'Douglas',
+        '10/05/26',
+        'venda');
+
+insert into posts (titulo, resumo, texto, autor, data, img)
 values('Gabriel Mec melhor da partida',
         'Gabriel Mec recebe o prêmio de melho da partida no confronto entre Grêmio x Coritiba',
         'Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio Grêmio v', 
@@ -99,11 +139,6 @@ CREATE TABLE usuarios(
     senha TEXT NOT NULL,
     role TEXT NOT NULL DEFAULT 'user'
 );
-
-
-
-drop table administradores;
-
 INSERT INTO usuarios (email, senha,role) 
 VALUES ('douglas@gmail.com', '$2y$10$rkjKDBGM0.3btlf.b7tTeul2X0OaU5QifnyFCPzFYFS/Mo9LMKkdq','adm');
 -- senha adm: douglas
