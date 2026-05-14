@@ -103,12 +103,6 @@ CREATE TABLE usuarios(
 
 
 drop table administradores;
-create table administradores(
-    Id integer NOT NULL PRiMARY KEY,
-    email text NOT NULL UNIQUE,
-    senha text NOT NULL,
-    role TEXT NOT NULL DEFAULT 'adm'
-);
 
 INSERT INTO usuarios (email, senha,role) 
 VALUES ('douglas@gmail.com', '$2y$10$rkjKDBGM0.3btlf.b7tTeul2X0OaU5QifnyFCPzFYFS/Mo9LMKkdq','adm');

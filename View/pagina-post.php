@@ -33,15 +33,24 @@ $img = $um_post['img'];
 
 <body>
 
-    <header style="text-align: center; padding: 20px;">
+    <header>
+        <div style=" padding: 20px;">
 
-        <div>
-            <img style="width: 10%;" src="../img/gremio logo.svg">
-        </div>
+            <div>
+                <a style="position: fixed; top: 20px; right: 20px; z-index: 9999; text-decoration: none;background-color: rgb(38, 120, 228); border-radius: 5px; padding: 8px;color: white;font-size: larger;" type="button" href="../index.php" 
+                data-bs-dismiss="modal" aria-label="Close">Home</a>
 
-        <div>
-            <img style="width: 50%;" src="../gif/gif-2000x380.gif">
+                <div style="text-align: center;">
+                    <img style="width: 10%;" src="../img/gremio logo.svg">
+                </div>
+            </div>
+
+            <div style="padding-bottom: 20px;text-align: center;">
+                <img style="width: 50%;" src="../gif/gif-2000x380.gif">
+
+            </div>
         </div>
+        
         
     </header>
 
@@ -59,9 +68,9 @@ $img = $um_post['img'];
 
                 <hr>
 
-                <p class="container" style="padding: 20px; width: 80%; text-align: justify;">
+                <h6 class="container" style="padding: 20px; width: 80%; text-align: justify;">
                 <?=$texto?>
-                </p>      
+                </h6>      
         </article>
 
     </main>   
@@ -79,7 +88,7 @@ $img = $um_post['img'];
         </button>
     </footer>
     <hr>
-    <div class="container">
+    <div style="padding-top: 25px;" class="container">
     
     <?php
     require("post-index.php");

@@ -35,21 +35,22 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
             
             <div class="col-4 d-flex justify-content-end align-items-center">
 
-                <div style="padding: 10px;">
+                <div style="padding: 20px;">
 
-                <?php if (!$logado): ?>
-                <a href="/View/login.html" class="btn-login" style="border-radius: 10px; color: white; display: inline-block;padding: 10px 25px;background-color: #007bff;">
-                    Entrar</a>
+                    <?php if (!$logado): ?>
+                    
+                    <a href="/View/login.html" class="btn-login" style="border-radius: 10px; color: white; display: inline-block;padding: 15px 25px;background-color: #007bff;">
+                        Entrar</a>
 
-                <?php elseif ($role === 'adm'): ?>
-                <div class="btn-auth admin">Bem-vindo, Administrador!</div>
-                <a href="/../Model/logout.php">Sair</a>
+                    <?php elseif ($role === 'adm'): ?>
+                    <div class="btn-auth admin">Bem-vindo, Administrador!</div>
+                    <a href="/../Model/logout.php">Sair</a>
 
-                <?php else: ?>
-                <div class="btn-auth user">Bem-vindo, Usuário!</div>
-                <a href="/../Model/logout.php">Sair</a>
+                    <?php else: ?>
+                    <div class="btn-auth user">Bem-vindo, Usuário!</div>
+                    <a href="/../Model/logout.php">Sair</a>
 
-                <?php endif; ?>             
+                    <?php endif; ?>             
                 </div>
 
             </div>

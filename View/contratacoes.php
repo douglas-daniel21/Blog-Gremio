@@ -23,7 +23,7 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
         </div>
         
         <nav>
-            <a href="../index.php">Voltar para home</a>
+            <a href="../index.php">Home</a>
 
             <?php if ($role === 'adm'): ?>
                 <a href="/View/contratacoes.php">Contratações</a>
