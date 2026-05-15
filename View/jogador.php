@@ -27,9 +27,9 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
             
 
             <?php if ($role === 'adm'): ?>
-                <a href="jogador.php">Jogadores</a>
-                <a href="novo-jogador.html">Novo Jogador</a>
-                <a href="gerenciar-jogador.php">Gerenciar Jogador</a>
+                <a href="/View/jogador.php">Jogadores</a>
+                <a href="/View/novo-jogador.html">Novo Jogador</a>
+                <a href="/View/gerenciar-jogador.php">Gerenciar Jogador</a>
             <?php endif; ?>      
         </nav>
     </header>
@@ -64,7 +64,7 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
             <div  style='text-align: center;'>
                 <div style='width: 100%;' class='card mb-4 rounded-3 shadow-sm'>
                     <div class='card-header'>
-                    <img style='width: 100%;' src='img/jogadores/$jogador_img.jpg'> 
+                    <img style='width: 100%;' src='/img/jogadores/$jogador_img.jpg'> 
                     </div>
                     <div id='card-body' class='card-body'>
                         <h3 class='card-title pricing-card-title'> $jogador_nome

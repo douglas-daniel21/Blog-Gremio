@@ -63,7 +63,7 @@ $role = $logado ? $_SESSION['usuario_role'] : null;
             <div  style='text-align: center;'  class='container'>
                 <div style='width: 100%; height: 550;' class='card mb-4 rounded-3 shadow-sm'>
                     <div class='card-header py-3'>
-                    <img src='/img/contratacoes/$contratacao_img.jpg'> 
+                    <img src='/../img/contratacoes/$contratacao_img.jpg'> 
                     </div>
                     <div id='card-body' class='card-body'>
                         <h1 class='card-title pricing-card-title'> $contratacao_nome

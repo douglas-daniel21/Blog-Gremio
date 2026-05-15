@@ -45,7 +45,7 @@ $img = $uma_contratacao['img'];
         </nav>  
     </header>
     <h2 style="text-align: center;">Editar Contratação</h2>
-    <form action="ctrl-atualizar-contratacao.php"  method="post">
+    <form action="/../Controller/ctrl-atualizar-contratacao.php"  method="post">
         
         <label>Nome:</label>
         <input type="text" style="width: 100%;" name="contratacao_nome" value="<?=$nome?>" required>
